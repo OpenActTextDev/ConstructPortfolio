@@ -17,7 +17,10 @@ editor: source
 **UNDER CONSTRUCTION**
 
 
-[*I Curso Verano Asociación Colombiana de Actuarios  2025*](https://actuarios.org.co/first-summer-camp-aca/)
+**Prior Courses**
+
+*  [*I Curso Verano Asociación Colombiana de Actuarios  2025*](https://actuarios.org.co/first-summer-camp-aca/)
+*  [Frees Bogotá Foundations Short Course](https://openacttextdev.github.io/RegressionSpanish/ShortCourseOrganization.html)
 
 ```{r include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, comment=NA, message = FALSE, warning = FALSE, fig.align="center", out.width='100%', fig.asp=0.60, results = 'asis')
@@ -82,11 +85,8 @@ This course will provide participants with a guided tour of the statistical and 
 
 # Short Course Brief Outline {-}
 
--  Day 1 - Foundations and Statistical Learning
--  Day 2 - Statistical and Machine Learning
-   -  Lecture on Ethical Aspects of AI from Dr. Fei Huang
--  Day 3 - More on Machine Learning and How it Affects Actuarial Practice 
-   -  Lecture on AI applications in insurance context from Prof. Dani Bauer
+
+xxx
    
 
    
@@ -96,7 +96,7 @@ This course will provide participants with a guided tour of the statistical and 
 *  So, four blocks per day, with three days in total
 
 
-```{r Table12, echo = FALSE}
+```{r Table12, echo = FALSE, eval = FALSE}
 
 Topics1 <- c('<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Welcome and Foundations <br> Hello to Google Colab</a>', 
              '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1B_30June.pdf">Classical Regression Modeling</a>',
@@ -153,16 +153,9 @@ kableExtra::kbl(Table1, caption = '<b>Detailed Schedule</b>',
 # Presenters {-}
 
 
-*  [Edward (Jed) Frees](https://sites.google.com/a/wisc.edu/jed-frees/home)
-*  [Andrés Villegas Ramirez](https://www.unsw.edu.au/staff/andres-villegas-ramirez)
+[Edward (Jed) Frees](https://sites.google.com/a/wisc.edu/jed-frees/home)
 
-
-**Plus** - Special Guest Lecturers
-
-*  [Fei Huang](https://www.unsw.edu.au/staff/fei-huang)
-*  [Dani Bauer](https://business.wisc.edu/directory/profile/daniel-bauer/)
-
-You can click on the links to learn more about our backgrounds.
+You can click on the links to learn more about my background.
 
 # Google Colaboratory and Jupyter Notebooks {-}
 
@@ -175,6 +168,10 @@ To deliver this course, we will utilize two resources that will likely be unfami
 *  [Jupyter notebooks](https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/Introduction%20to%20Jupyter%20Notebooks.ipynb) provide a handy way to combine executable code, code outputs, and text into one connected file.    
    *  You can take a look at the course notebooks by going to [nbviewer site](https://nbviewer.org/). Then, enter the course Github repo URL [https://github.com/OpenActTextDev/ActuarialRegression](https://github.com/OpenActTextDev/ActuarialRegression/tree/main/Notebooks), select the folder and then a notebook that you want to view.
    *  To interact with notebook, go to Colab!
+
+# Chatbot {-}
+
+[Try my Actuarial Gem](https://gemini.google.com/share/d/1im6E6sijDR3h4OweakuGNd8Ww30n_ekx?usp=sharing)
 
 
 # Data {-}

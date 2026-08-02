@@ -1,5 +1,5 @@
 ---
-title: "Constructing Insurable Risk Portfolios"
+title: "Workshop: Constructing Insurable Risk Portfolios"
 author:
   - Edward (Jed) Frees, University of Wisconsin - Madison
 date: 17 October 2026
@@ -14,13 +14,17 @@ output-dir: docs
 editor: source
 ---
 
-**UNDER CONSTRUCTION**
+<br>
+
+Workshop held in conjunction with the [IX Simposio Internacional de Actuaría](https://simposiointernacionalaca.com/).
 
 
 **Prior Courses**
 
-*  [*I Curso Verano Asociación Colombiana de Actuarios  2025*](https://actuarios.org.co/first-summer-camp-aca/)
-*  [Frees Bogotá Foundations Short Course](https://openacttextdev.github.io/RegressionSpanish/ShortCourseOrganization.html)
+*  [Curso Verano Asociación Colombiana de Actuarios,   2025](https://actuarios.org.co/first-summer-camp-aca/)
+   *  Schedule for [Summer Course: Foundations of Statistical and Machine Learning for Actuaries, 2025](https://openacttextdev.github.io/ActuarialRegression/)
+*  [Workshop on the Foundations: Regression with Actuarial Applications,  2024](https://openacttextdev.github.io/RegressionSpanish/ShortCourseOrganization.html)
+   *  Part of the [VIII Simposio Internacional de Actuaría, 2024](https://2024.simposiointernacionalaca.com/?_gl=1%2A1k563bm%2A_ga%2AMTEzMzQzMTU2Ni4xNzg1Njc5Mzgx%2A_ga_XN3RSS52H0%2AczE3ODU2NzkzODAkbzEkZzEkdDE3ODU2Nzk0MDgkajMyJGwwJGgw)
 
 ```{r include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, comment=NA, message = FALSE, warning = FALSE, fig.align="center", out.width='100%', fig.asp=0.60, results = 'asis')
@@ -56,7 +60,7 @@ PdfEval  <- knitr:::is_latex_output()
 ```
 
 
-**Course Overview.** This short course will show how to use techniques from probability, statistics, and optimization to build algorithms that construct optimal risk insurable portfolios under budget constraints. The arguments, case studies, and code will be drawn primarily from a recently published text by the course presenter, *Constructing Insurable Risk Portfolios*. The book is freely available at <https://users.ssc.wisc.edu//~ewfrees/InsurableRisks/>.
+**Course Overview.** This short course will show how to use techniques from probability, statistics, and optimization to build algorithms that construct optimal risk insurable portfolios under budget constraints. The arguments, case studies, and code will be drawn primarily from a recently published text by the course presenter, *Constructing Insurable Risk Portfolios*. A html version of the book is [freely available](https://users.ssc.wisc.edu//~ewfrees/InsurableRisks/).
 
 `r HideText('Begin.Hide', 'More on the Course Overview: Statistical and Machine Learning.')`  In contrast to statistical learning, machine learning only uses algorithms that can learn from the data and do not employ an underpinning probabilistic framework. Due to their popularity and widespread use, we provide an overview with an emphasis on actuarial applications. Our main focus is on neural networks and the "deep learning" associated with many layers of a network. Without the need to develop reasoning based on probabilistic models, the machine learning community has developed approaches to handle a broad set of problems including those from computer vision, text recognition, and natural language processing; we demonstrate these applications in this course. 
 
@@ -150,12 +154,23 @@ kableExtra::kbl(Table1, caption = '<b>Detailed Schedule</b>',
    
 </div>
 
-# Presenters {-}
+# About the Instructor {-}
 
 
-[Edward (Jed) Frees](https://sites.google.com/a/wisc.edu/jed-frees/home)
+You can click on the link to learn more about my background.
 
-You can click on the links to learn more about my background.
+`r HideText('Instructor.Hide', 'Learn About the Instructor')` Edward (Jed) Frees is a Fellow of the American Statistical Association and a former Fellow of the Society of Actuaries. He served as founding chairperson of the Society of Actuaries’ Education and Research Section as well as a member of the Board of Directors of the Society of Actuaries; he has also served as a Trustee of the Actuarial Foundation. Professor Frees served as an actuarial representative to the Social Security Advisory Board’s Technical Panel on Methods and Assumptions. Professor Frees was the Editor and is currently on Honorary Advisory Boards for the *North American Actuarial Journal* and the *Annals of Actuarial Science*. He is also an Editor for *Insurance: Mathematics and Economics.*
+
+Professor Frees is an emeritus professor at the University of Wisconsin-Madison and was a professor of actuarial studies with the Australian National University. He is
+
+*  the editor of the Spanish version of the open actuarial textbook, [Loss Data Analytics](https://openacttexts.github.io/LDASpanish/), is
+*  has completed a (free) Spanish translation of his regression modeling book, [Modelado de Regresión con Aplicaciones Actuariales y Financieras](https://openacttextdev.github.io/RegressionSpanish/index.html), and 
+*  has completed his latest book, entitled *Constructing Insurable Risk Portfolios*.
+
+</div>
+
+You can contact Jed at <jfrees@bus.wisc.edu>. See the [Frees Homepage](https://sites.google.com/a/wisc.edu/jed-frees/home) for more information about his background.
+
 
 # Google Colaboratory and Jupyter Notebooks {-}
 
@@ -169,9 +184,12 @@ To deliver this course, we will utilize two resources that will likely be unfami
    *  You can take a look at the course notebooks by going to [nbviewer site](https://nbviewer.org/). Then, enter the course Github repo URL [https://github.com/OpenActTextDev/ActuarialRegression](https://github.com/OpenActTextDev/ActuarialRegression/tree/main/Notebooks), select the folder and then a notebook that you want to view.
    *  To interact with notebook, go to Colab!
 
-# Chatbot {-}
+# Google Notebooks {-}
 
-[Try my Actuarial Gem](https://gemini.google.com/share/d/1im6E6sijDR3h4OweakuGNd8Ww30n_ekx?usp=sharing)
+[Try my Chapter 1 Google Notebook](https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1)
+
+
+[OLD - My Test Actuarial Google Gem](https://gemini.google.com/share/d/1im6E6sijDR3h4OweakuGNd8Ww30n_ekx?usp=sharing)
 
 
 # Data {-}
@@ -192,7 +210,6 @@ However, should you be interested in experimenting further, here are some helpfu
 # Reading {-}
 
 For this course, we will **not** ask participants to read material in advance of the course.
-
 
 Nonetheless, we have listed here *many* freely available resources to learn about statistical and machine learning. Our hope is that the course will inspire some attendees to continue learning about these approaches after the course. If you wish to continue your learning journey, these resources may be useful to you.
 

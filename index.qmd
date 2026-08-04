@@ -3,29 +3,29 @@ title: "Workshop: Constructing Insurable Risk Portfolios"
 author:
   - Edward (Jed) Frees, University of Wisconsin - Madison
 date: 17 October 2026
-header-includes:
-  - \usepackage{wrapfig}
+# header-includes:
+#   - \usepackage{wrapfig}
 format:
   html:
 #  docx:
     include-before-body: ShowHideShortCourse.js
     number-sections: true
     date-format: "D MMMM YYYY"
-  pdf:
-    number-sections: true
-    keep-tex: true
-    include-in-header:
-      text: |
-        \usepackage{array}
-        \usepackage{booktabs}
-        \usepackage{float} 
+  # pdf:
+  #   number-sections: true
+  #   keep-tex: true
+  #   include-in-header:
+  #     text: |
+  #       \usepackage{array}
+  #       \usepackage{booktabs}
+  #       \usepackage{float} 
 output-dir: docs
 editor: source
 ---
 
 <br>
 
-Workshop held in conjunction with the [IX Simposio Internacional de Actuaría](https://simposiointernacionalaca.com/).
+Workshop to be held in conjunction with the [IX Simposio Internacional de Actuaría](https://simposiointernacionalaca.com/).
 
 
 **Prior Courses**
@@ -34,6 +34,8 @@ Workshop held in conjunction with the [IX Simposio Internacional de Actuaría](h
    *  Schedule for [Summer Course: Foundations of Statistical and Machine Learning for Actuaries, 2025](https://openacttextdev.github.io/ActuarialRegression/)
 *  [Workshop on the Foundations: Regression with Actuarial Applications,  2024](https://openacttextdev.github.io/RegressionSpanish/ShortCourseOrganization.html)
    *  Part of the [VIII Simposio Internacional de Actuaría, 2024](https://2024.simposiointernacionalaca.com/?_gl=1%2A1k563bm%2A_ga%2AMTEzMzQzMTU2Ni4xNzg1Njc5Mzgx%2A_ga_XN3RSS52H0%2AczE3ODU2NzkzODAkbzEkZzEkdDE3ODU2Nzk0MDgkajMyJGwwJGgw)
+   
+***
 
 ```{r include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, comment=NA, message = FALSE, warning = FALSE, fig.align="center", out.width='100%', fig.asp=0.60, results = 'asis')
@@ -88,13 +90,13 @@ This course will provide participants with a guided tour of the statistical and 
 
 `r HideText('Begin2.Hide', 'More on the Course Format: Coding in R and Python.')` For the foundations, the statistical learning component, and many of the case studies, we will utilize the statistical package 'R'. This package is written by statisticians and its approach is tied directly to statistical applications. Participants with some familiarity with 'R' will benefit most from the course. For the machine learning components, we provide code from the general programming language 'python'. We do not assume prior knowledge of python but will provide code so that participants can calibrate machine learning models using case studies. One of the benefits of the course is to expose participants to the power of python.
 
-***
-
 </div>
 
 <br>
 
 **Target Audience**: Practicing actuaries, students, and educators interested in exposure to the foundations of insurance analytics.
+
+***
 
 # Schedule {-}
 
@@ -119,18 +121,18 @@ schedule <- data.frame(
     "4:50–5:00 pm"
   ),
   Activity = c(
-    "Welcome, Introduction to the workshop,<br>&nbsp;&nbsp;&nbsp;How it will work, What you can get out of it.",
-    "Topic 1. Introduction to <i>Constructing Insurable Risk Portfolios</i>",
+    "<b>Welcome</b>, Introduction to the workshop,<br>&nbsp;&nbsp;&nbsp;How it will work, What you can get out of it.",
+    "<b>Topic 1</b>. Introduction to <i>Constructing Insurable Risk Portfolios</i>",
     "Participants will explore features and learn how to construct an optimal investment portfolio",
     "Coffee Break",
-    "Topic 2. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks",
+    "<b>Topic 2</b>. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks",
     "Participants will explore health data",
     "Lunch",
-    "Topic 3. Optimizing Retention with ANU Data",
+    "<b>Topic 3</b>. Optimizing Retention with ANU Data",
     "Participants will explore Wisconsin Data",
     "Break",
-    "Topic 4. Incorporating Spatial Dependence",
-    "Participants will explore Florida flood data",
+    "<b>Topic 4</b>. Incorporating Spatial Dependence",
+    "Participants will explore Florida flood insurance data",
     "Wrap-Up"
   ),  stringsAsFactors = FALSE)
 
@@ -234,9 +236,9 @@ kableExtra::kbl(Table1, caption = '<b>Detailed Schedule</b>',
 
 <br>
 
-
-   
 </div>
+
+***
 
 # About the Instructor {-}
 
@@ -245,8 +247,6 @@ You can click on the link to learn more about my background.
 
 `r HideText('Instructor.Hide', 'Learn About the Instructor')` <img src="Frees_EdwardHiRes_LR.jpg"
      style="float:right; width:180px; margin-left:20px;">Edward (Jed) Frees is a Fellow of the American Statistical Association and a former Fellow of the Society of Actuaries. He served as founding chairperson of the Society of Actuaries’ Education and Research Section as well as a member of the Board of Directors of the Society of Actuaries; he has also served as a Trustee of the Actuarial Foundation. Professor Frees served as an actuarial representative to the Social Security Advisory Board’s Technical Panel on Methods and Assumptions. Professor Frees was the Editor and is currently on Honorary Advisory Boards for the *North American Actuarial Journal* and the *Annals of Actuarial Science*. He is also an Editor for *Insurance: Mathematics and Economics.*
-
-     
 
 
 Professor Frees is an emeritus professor at the University of Wisconsin-Madison and was a professor of actuarial studies with the Australian National University. He is
@@ -261,6 +261,172 @@ Professor Frees is an emeritus professor at the University of Wisconsin-Madison 
 
 You can contact Jed at <jfrees@bus.wisc.edu>. See the [Frees Homepage](https://sites.google.com/a/wisc.edu/jed-frees/home) for more information about his background.
 
+***
+
+# Google Gemini Notebooks {-}
+
+
+I am sharing read-only Gemini Notebooks with you. **This tool is like a smart study assistant that only knows the content I uploaded — so it is focused, grounded, and safe to use!**
+
+####  **Step-by-Step Guide (Click to Reveal Each Step)** {-}
+
+`r HideText('StepA.Hide', 'A. Open the Shared Notebook')` 
+
+Click the link for a notebook I gave you. You will see:
+
+*  A list of Sources (documents I uploaded) [on the left]
+*  A chat-style assistant [in the middle]
+*  Any notes saved by me [on the right]
+
+</div>
+
+`r HideText('StepB.Hide', 'B. Ask Smart Questions')` 
+
+
+**Gemini Notebook** is your personal learning assistant. Use it to go beyond just recalling information and build a deeper understanding of course materials. Use the prompts below to guide your learning and prepare for assignments.
+
+### Core Learning: The Basics (Bloom's Taxonomy) 🧠 {-}
+
+Use these prompts to build and test your knowledge.
+
+#### Remembering {-}
+
+*  What are the five main accounts on a balance sheet?
+*  What is the definition of "moral hazard"?
+*  Name the four components of the marketing mix.
+*  List the different types of property ownership.
+
+#### Understanding {-}
+
+*  Explain the double-entry accounting system.
+*  How does the law of large numbers apply to insurance?
+*  Summarize the key tenets of McGregor's Theory X and Theory Y.
+*  Describe the difference between a push and a pull inventory system.
+
+#### Applying {-}
+
+*  Given the list of transactions, prepare a simple income statement.
+*  Using the provided scenario, identify the insurable risks for a small business.
+*  Apply Maslow's Hierarchy of Needs to a scenario where an employee is unmotivated.
+*  Based on the case study, what marketing mix strategy would you recommend for a new product launch?
+
+#### Analyzing {-}
+
+*  Analyze the financial statements to identify trends in a company's profitability over the last five years.
+*  Break down the components of a company's valuation to determine what is driving its stock price.
+*  Analyze the ethical implications of a company's decision to downsize its workforce.
+*  Compare the digital marketing campaigns of two competing companies, identifying their strengths and weaknesses.
+
+#### Evaluating {-}
+
+*  Critique the company's accounting practices based on GAAP principles.
+*  Evaluate the effectiveness of a company's current risk management plan.
+*  Assess the success of a recent product launch using key performance indicators (KPIs).
+*  Evaluate a real estate investment property based on its potential for cash flow and appreciation.
+
+#### Creating {-}
+
+*  Draft a hypothetical budget for a new business based on the provided sales projections.
+*  Create a financial model to forecast a startup's growth over the next five years.
+*  Design a new employee training program to address common workplace conflicts.
+*  Develop a social media content calendar for a new brand launching next quarter.
+
+### Content Creation & Collaboration ✍️ {-}
+
+`r HideText('StepCCandC.Hide', 'Not Needed for a One Day Workshop.')` 
+
+Use these prompts to create new content and organize your thoughts.
+
+*  **Outline & Draft**: Ask Gemini Notebook to help you structure your writing.
+   *  *Prompt Idea*: "Create an outline for an essay on corporate social responsibility."
+   *  *Prompt Idea*: "Draft a 5-point executive summary for the report on the company's annual performance."
+   *  *Prompt Idea*: "Generate a presentation script for a pitch to potential investors based on the business plan."
+*  **Summarize & Synthesize**: Get a quick overview of long documents or multiple sources.
+   *  *Prompt Idea*: "Summarize the key arguments from the four articles on global trade."
+   *  *Prompt Idea*: "Synthesize the main findings from the three market research reports into a single paragraph."
+   *  *Prompt Idea*: "Create a table that compares the features of the competing products described in the sources."
+*  **Build a Glossary**: Create your own reference tool for key terms.
+   *  *Prompt Idea*: "Find and list all the key financial terms and their definitions from the textbook."
+   *  *Prompt Idea*: "Create a list of all the abbreviations used in the project management documents and what they stand for."
+   *  *Prompt Idea*: "Find and define all the legal terms related to real estate transactions in the contract."
+
+</div>
+ 
+### Active Learning & Self-Assessment 🗣️ {-}
+
+`r HideText('StepALandS.Hide', 'Not Needed for a One Day Workshop.')` 
+
+Use these prompts to test your knowledge and prepare for exams.
+
+*  **Generate a Quiz**: Create multiple-choice or true/false questions.
+   *  *Prompt Idea*: "Create a 5-question multiple-choice quiz on the principles of consumer behavior."
+   *  *Prompt Idea*: "Generate five true or false questions about the company's financial history."
+   *  *Prompt Idea*: "Write a short answer quiz to test my knowledge of the concepts covered in the lecture on risk management."
+*  **Create Flashcards**: Turn concepts into flashcards for easy memorization.
+   *  *Prompt Idea*: "Generate 10 flashcards on key concepts from the supply chain management module."
+   *  *Prompt Idea*: "Create flashcards for all the major historical dates and events mentioned in the case study."
+   *  *Prompt Idea*: "Generate a set of flashcards with terms on one side and their definitions on the other for the accounting chapter."
+*  **Simulate a Discussion**: Role-play a debate to understand different perspectives.
+   *  *Prompt Idea*: "Act as a CFO and explain the budget cuts to me, using the provided financial report."
+   *  *Prompt Idea*: "Debate the pros and cons of remote work from the perspective of both an employee and a manager."
+   *  *Prompt Idea*: "Role-play as a client and ask me to justify the value proposition of my new business."
+   
+</div>
+
+**Remember**: The more specific your prompts, the better Gemini Notebook can assist you. Use this tool not just for answers, but to think critically and deeply about the material.
+
+</div>
+
+`r HideText('StepC.Hide', 'C. Save Notes to Review Later')` 
+
+*  Click “Copy” on helpful responses
+*  Build your own mini study guide over time (use a separate document or start your own Study Buddy Notebook for each topic).
+
+</div>
+
+`r HideText('StepD.Hide', 'D. Reflect on What You Learn')` 
+
+
+Use it to:
+
+*  Confirm what you already know
+*  Explain ideas in your own words
+*  Identify what you still need to learn
+
+Try adding a note like:
+
+“The AI helped me understand the case better, but it missed [X]… I think that’s important because…”
+
+</div>
+
+`r HideText('StepE.Hide', 'E. Know the Limits')` 
+
+*  The assistant only knows what’s in the uploaded sources
+*  It does <b>not</b> browse the internet
+*  It might simplify or misinterpret—think critically
+
+
+</div>
+
+`r HideText('StepF.Hide', 'F. Bonus Study Tips')` 
+
+*  Use Gemini Notebook to help interpret mathematical expressions
+   *  *Prompt Idea*: "Interpret equation (1.1)."
+*  Ask it to help understand the <b>R</b> code.
+*  If you ask a question in English, it is designed to respond in English. In the same way, if you ask in Spanish, it should respond in Spanish.
+
+</div>
+
+<br><br>
+
+
+[Try the Chapter 1 Google Notebook](https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1)
+
+
+<!-- [OLD - My Test Actuarial Google Gem](https://gemini.google.com/share/d/1im6E6sijDR3h4OweakuGNd8Ww30n_ekx?usp=sharing) -->
+
+***
+
 
 # Google Colaboratory and Jupyter Notebooks {-}
 
@@ -274,12 +440,6 @@ To deliver this course, we will utilize some resources that may be unfamiliar to
    *  You can take a look at the course notebooks by going to [nbviewer site](https://nbviewer.org/). Then, enter the course Github repo URL [https://github.com/OpenActTextDev/ActuarialRegression](https://github.com/OpenActTextDev/ActuarialRegression/tree/main/Notebooks), select the folder and then a notebook that you want to view.
    *  To interact with notebook, go to Colab!
 
-# Google Notebooks {-}
-
-[Try my Chapter 1 Google Notebook](https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1)
-
-
-[OLD - My Test Actuarial Google Gem](https://gemini.google.com/share/d/1im6E6sijDR3h4OweakuGNd8Ww30n_ekx?usp=sharing)
 
 
 # Data {-}
@@ -391,6 +551,7 @@ Nonetheless, we have listed here *many* freely available resources to learn abou
 
 </div>
 
+***
 
 # Learn Python {-}
  

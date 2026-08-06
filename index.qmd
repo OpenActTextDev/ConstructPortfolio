@@ -25,10 +25,10 @@ editor: source
 
 <br>
 
-Workshop to be held in conjunction with the [IX Simposio Internacional de Actuaría](https://simposiointernacionalaca.com/).
+This workshop will be held in conjunction with the [IX Simposio Internacional de Actuaría](https://simposiointernacionalaca.com/).
 
 
-**Prior Courses**
+**Prior Courses and Workshops**
 
 *  [Curso Verano Asociación Colombiana de Actuarios,   2025](https://actuarios.org.co/first-summer-camp-aca/)
    *  Schedule for [Summer Course: Foundations of Statistical and Machine Learning for Actuaries, 2025](https://openacttextdev.github.io/ActuarialRegression/)
@@ -71,7 +71,7 @@ PdfEval  <- knitr:::is_latex_output()
 ```
 
 
-**Course Overview.** This workshop will show how to use techniques from probability, statistics, and optimization to build algorithms that construct optimal risk insurable portfolios under budget constraints. The analytical approach, case studies, and code will be drawn primarily from a recently published text, *Constructing Insurable Risk Portfolios*, written by the workshop presenter. A html version of the book is [freely available](https://users.ssc.wisc.edu//~ewfrees/InsurableRisks/).
+**Course Overview.** This workshop will show how to use techniques from probability, statistics, and optimization to build algorithms that construct optimal risk insurable portfolios under budget constraints. The analytical approach, case studies, and code will be drawn primarily from a recently published text, *Constructing Insurable Risk Portfolios*, written by the workshop presenter. An online (html) version of the book is [freely available](https://users.ssc.wisc.edu//~ewfrees/InsurableRisks/).
 
 `r HideText('Begin.Hide', 'More on the Course Overview: Constructing Insurable Risk Portfolios')`  
 Firms face many risks, such as damage to their buildings due to fire, liability resulting from management misbehavior, and threats external to the organization like cyber attacks. Because the financial impact of these risks can be mitigated by using risk transfer tools like insurance, we think of them as insurable risks. Firms are financially responsible for these risks, essentially “owning” them. This naturally leads to the idea of managing them as a portfolio. This book shows how risk managers can manage a risk portfolio cost-effectively by adapting financial concepts of diversification to insurable risk management.
@@ -91,12 +91,11 @@ Firms face many risks, such as damage to their buildings due to fire, liability 
 *  Thus, it is anticipated that participants will **bring a laptop**. 
 *  For this workshop, you only need a (free) **Google account**.
 
-<br>
 
-`r HideText('Begin2.Hide', 'More on the Course Format: You only need a laptop and get a Google Account, How?')` 
-For this workshop, you will need a free Google account (if you have a Gmail address, then you have a Google account). If you do not already have one, please create an account at <https://accounts.google.com/signup>. You will use your Google account to access Google Colab, Gemini Notebook, and if you would like to save intermediate work, Google Drive.
+`r HideText('Begin2.Hide', 'More on the Course Format: You only need a laptop and a Google account, How?')` 
+For this workshop, you will need a **free** Google account (if you have a Gmail address, then you have a Google account). If you do not already have one, please create an account at <https://accounts.google.com/signup>. You will use your Google account to access Google Colab, Gemini Notebook, and if you would like to save intermediate work, Google Drive.
 
-To facilitate active learning, you will explore case studies that utilize the statistical package ‘R’. This package is written by statisticians and its approach is tied directly to statistical applications. Participants with some familiarity with ‘R’ will benefit most from the course. However, we will use **Google Colab**, so you do not need to have 'R' installed on your laptop nor will you need to download datasets in advance. Just a laptop and a Google account!
+To facilitate active learning, you will explore case studies that utilize the statistical package ‘R’. This package is written by statisticians and its approach is tied directly to statistical applications. Participants with some familiarity with ‘R’ will benefit most from the course. We will use **Google Colab**, so you do not need to have 'R' installed on your laptop nor will you need to download datasets in advance. Just a laptop and a Google account!
 
 </div>
 
@@ -127,7 +126,7 @@ schedule <- data.frame(
     "<b>Topic 2</b>. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks",
     "Participants will work with code to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.",
     "<i>Lunch</i>",
-    "<b>Topic 3</b>. Optimizing Risk Retention with ANU Data",
+    "<b>Topic 3</b>. Two Case Studies: Optimizing Risk Retention with Australian and Wisconsin Data",
     "Participants will explore optimizing risk portfolios using commercial insurance data from Wisconsin",
     "<i>Break</i>",
     "<b>Topic 4</b>. Incorporating Spatial Dependence",
@@ -161,10 +160,14 @@ kbl(schedule,  escape = FALSE,
 
 <br>
 
-`r HideText('Section4122.Hide', 'A More Detailed Plan')`   
+`r HideText('Section4122.Hide', 'Detailed Workshop Schedule')`   
 
 *  Each block consists of a lecture, with substantial time for interactive work and a healthy break.
-*  This table will be updated later...
+*  Click on the table links to get access to 
+   *  course overheads/slides, 
+   *  Jupyter Notebooks (containing statistical code), and 
+   *  Gemini Notebooks (featuring a chatbot that will help answer your questions!)
+*  This table will be updated later but definitely before the workshop starts!
 
 
 ```{r echo = FALSE}
@@ -179,11 +182,11 @@ schedule <- data.frame(
   ),
   Activity = c(
     "<b>Welcome</b>, Introduction to the workshop,<br>&nbsp;&nbsp;&nbsp;How it will work, What you can get out of it.",
-    '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Welcome and Foundations</a> <br>
-    <a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Optimizing Investment Portfolios</a>' ,
+    '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Topic 1 Pdf Slides - Introduction to Constructing Insurable Risk Portfolios</a> <br>
+    <a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Topic 1 Pdf Slides - Optimizing Investment Portfolios</a>' ,
     'Participants learn how to construct an optimal investment portfolio <br>
-    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/InvestmentPortfolios.ipynb">Topic 1 Jupyter Notebook on Investment Portfolios</a> <br>
-    <a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Optimizing Investment Portfolios Gemini Notebook</a>',
+    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/InvestmentPortfolios.ipynb">Topic 1 Jupyter Notebook - Optimizing Investment Portfolios</a> <br>
+    <a href="https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1">Topic 1 Gemini Notebook - Optimizing Investment Portfolios</a>',
     "<i>Coffee Break</i>",
     "<b>Topic 2</b>. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks",
     "Participants will work with code to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.",
@@ -300,7 +303,8 @@ You can contact Jed at <jfrees@bus.wisc.edu>. See the [Frees Homepage](https://s
 # Google Gemini Notebooks {-}
 
 
-In the Detailed Course Schedule, you will find links to the read-only Gemini Notebooks that I am sharing with. **This tool is like a smart study assistant that only knows the content I uploaded — so it is focused, grounded, and safe to use!**
+In the Detailed Workshop Schedule, you will find links to read-only Gemini Notebooks that I am sharing with. **This tool is like a smart study assistant that only knows the content I uploaded — so it is focused, grounded, and safe to use!**
+
 
 ####  **Step-by-Step Guide (Click to Reveal Each Step)** {-}
 
@@ -407,7 +411,7 @@ Use these prompts to test your knowledge and prepare for exams.
    
 </div>
 
-**Remember**: The more specific your prompts, the better Gemini Notebook can assist you. Use this tool not just for answers, but to think critically and deeply about the material.
+**Remember**: The more specific are your prompts, the better Gemini Notebook can assist you. Use this tool not just for answers, but to think critically and deeply about the material.
 
 </div>
 
@@ -419,7 +423,6 @@ Use these prompts to test your knowledge and prepare for exams.
 </div>
 
 `r HideText('StepD.Hide', 'D. Reflect on What You Learn')` 
-
 
 Use it to:
 
@@ -454,7 +457,7 @@ Try adding a note like:
 <br><br>
 
 
-[Try the Chapter 1 Google Notebook](https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1)
+[**Try the Chapter 1 Google Notebook**](https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1)
 
 
 <!-- [OLD - My Test Actuarial Google Gem](https://gemini.google.com/share/d/1im6E6sijDR3h4OweakuGNd8Ww30n_ekx?usp=sharing) -->
@@ -491,129 +494,6 @@ However, should you be interested in experimenting further, here are some helpfu
 
 </div>
 
-# Reading {-}
-
-For this course, we will **not** ask participants to read material in advance of the course.
-
-Nonetheless, we have listed here *many* freely available resources to learn about statistical and machine learning. Our hope is that the course will inspire some attendees to continue learning about these approaches after the course. If you wish to continue your learning journey, these resources may be useful to you.
 
 
-`r HideText('Reading.Hide', 'More Reading Resources')`   
-
-# Actuarial courses
-
--   Madison
-    -   [Frees Bogotá Foundations Short Course](https://openacttextdev.github.io/RegressionSpanish/ShortCourseOrganization.html)
-    -   [Frees Regression Book in Spanish](https://openacttextdev.github.io/RegressionSpanish/index.html)
-    -   [Dani Bauer's Teaching Github Repo](https://github.com/danielbauer1979/MSDIA_PredictiveModelingAndMachineLearning)
-    -   [Dani Bauer's CAS Tutorial 2022 on Github](https://github.com/danielbauer1979/CAS_PredMod)
--   Australia
-    -   [Villegas Ramirez 2023 AFRIC Statistical learning workshop, Github Repo](https://github.com/amvillegas/afric)
-    -   [UNSW; Statistical Machine Learning for Risk and Actuarial Applications](https://unsw-risk-and-actuarial-studies.github.io/ACTL3142/). This course relies heavily on James et al.; see below.
-    -   [UNSW: Artificial Intelligence and Deep Learning Models for Actuarial Applications](https://laub.au/DeepLearningForActuaries/)
-        -   [Course GitHub Resources](https://github.com/Pat-Laub/DeepLearningForActuaries)
-        -   [Course Motivation](https://www.actuaries.digital/2023/05/18/teaching-ai-to-unsw-actuarial-students/)
-    -   [UNSW Actuarial Software Directory](https://unsw-risk-and-actuarial-studies.github.io/)        
--  Switzerland
-    -   [Github Repo For Actuarial Deep Learning Short Course](https://github.com/actuarial-data-science/CourseDeepLearningWithActuarialApplications)
--   Other
-    -   [Machine Learning for Actuarial Science - Github Repo](https://github.com/xiangshiyin/machine-learning-for-actuarial-science)
-    -   This course and UNSW course rely heavily on [Géron, A. (2022). Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow (3rd ed.). O'Reilly Media.](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/).
-        -  [Free Github Code for Géron](https://github.com/ageron/handson-ml3)
- 
-
-# Other actuarial resources
-
--  UK
-   -   [IFoA: Actuaries Analytical Cookbook](https://actuariesinstitute.github.io/cookbook/docs/index.html)
-   -   [Getting Started in Machine Learning](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/workstreams/foundations/)
--  Switzerland
-   -   [Actuarial Data Science](https://actuarialdatascience.org/)
-   -   [Github Repo](https://github.com/actuarial-data-science/Tutorials)  
-   -    [AI Tools for Actuaries (March 3 2025), Mario Wüthrich et al.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5162304)   
-   -   [Statistical Foundations of Actuarial Learning and its Applications](https://link-springer-com.virtual.anu.edu.au/book/10.1007/978-3-031-12409-9)
--  Rest of Europe
-   -   [CPD in Data Science](https://actuary.eu/wp-content/uploads/2024/09/2024-09-16_CPD-in-DS-FINAL.pdf)
-   -   Effective Statistical Learning Methods for Actuaries (2019/20), by Michel Denuit, Donatien Hainaut , Julien Trufin (**not free**) 
-       -  [Part 1: GLMs and Extensions](https://link.springer.com/book/10.1007/978-3-030-25820-7)
-       -  [Part II: Tree-Based Methods and Extensions](https://link.springer.com/book/10.1007/978-3-030-57556-4)
-       -  [Part III: Neural Networks and Extensions](https://www.amazon.com/Effective-Statistical-Learning-Methods-Actuaries-ebook/dp/B07ZVK2H43)
- 
-## Thought Provoking Articles and Commentaries 
-
--   [Recent Challenges in Actuarial Science](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-040120-030244), by Embrechts and Wütrich
--   [What an actuary should know about artificial intelligence](https://actuary.eu/wp-content/uploads/2024/01/What-should-an-actuary-know-about-Artificial-Intelligence.pdf)
--   [Wolfram Overview of ML](https://www.wolfram.com/language/introduction-machine-learning/)
-    -   [What Is ChatGPT Doing - and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/) 
-
-# Other Courses (Some with Books)
-
-### Statistical Learning {-}
-
--   [James et al. (2021), An Introduction to Statistical Learning with Applications in R](https://www.statlearning.com/)
--   [James et al. (2023), An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/)
-    -   [Stanford Statistical Learning](https://www.edx.org/learn/python/stanford-university-statistical-learning-with-python)
-    -   [YouTube](https://www.youtube.com/watch?v=yLEx1FnYyOo&list=PLoROMvodv4rNHU1-iPeDRH-J0cL-CrIda&index=11)
-
-### Machine Learning and AI {-}
-
-
--   [Coursera - Machine Learning by Andrew Ng](https://www.coursera.org/learn/machine-learning)
--   [Lecun ML Course](https://atcold.github.io/NYU-DLSP21/)
--   [Build a Large Language Model (From Scratch)](https://lightning.ai/courses/deep-learning-fundamentals/)
-    -   [Raschka Teaching Site](https://sebastianraschka.com/teaching/)
--   [Python Machine Learning](https://archive.org/details/python-machine-learning-and-deep-learning-with-python-scikit-learn-and-tensorflow-2)
-    -   [Github Repo](https://github.com/rasbt/python-machine-learning-book-3rd-edition)
--   [Fast AI](https://course.fast.ai/)
-
-
-## Books {-}
-
--   [ Chollet, F. (2021). Deep learning with Python. Simon and Schuster.](https://sourestdeeds.github.io/pdf/Deep%20Learning%20with%20Python.pdf)
-    -  [Python Github Repo](https://github.com/fchollet/deep-learning-with-python-notebooks)
-    -  [R Github Repo](https://github.com/t-kalinowski/deep-learning-with-R-2nd-edition-code)
-    -  [A Friendly R Intro to Keras](https://keras3.posit.co/index.html)
-    -  [Datacamp Course Overview](https://www.datacamp.com/tutorial/keras-r-deep-learning)
--   [Introduction to Neural Network Models of Cognition](https://com-cog-book.github.io/com-cog-book/intro.html)
--   [Deep Learning - Goodfellow, Bengio, Courville](https://www.deeplearningbook.org/)
-- *Book:* ["Speech and Language Processing" by Dan Jurafsky and James H. Martin](https://web.stanford.edu/~jurafsky/slp3/)
-     - *Course:* [Stanford CS224n - Natural Language Processing with Deep Learning - YouTube Lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ)
--   [Hands-on Large Language Models](https://jalammar.github.io/illustrated-transformer/)
--   [Grokking Deep Learning](https://www.manning.com/books/grokking-deep-learning)
-    -    [Github Repo](https://github.com/iamtrask/Grokking-Deep-Learning)
--   [An interesting collection of free books](https://github.com/yanshengjia/ml-road/tree/master)
-
-</div>
-
-***
-
-# Learn Python {-}
- 
-In this course, we will **not** assume knowledge of Python although we will assume that participants have some familiarity with R. Through exposure to the Python scripts, we simply want to demonstrate how machine learning tools can be utilized.
-
-`r HideText('Python.Hide', 'A Few Python Resources')`   
-
-The Python machine learning community is much larger than the corresponding R-users community. If you decide to continue on a machine learning journey, you probably will want to get additional exposure to Python. Here are a few selected resources:
-
--   [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
-    -  [Beyond the Basic Stuff with Python](https://inventwithpython.com/beyond/) - Some great explanations
-
-
-<br>
-
-**Some Ways that Python differs from R**
-
--   Purpose
-    -  R: Designed for statisticians by statisticians.
-    -  Python: General-purpose language (web dev, automation, AI, etc.) with growing data science capabilities.
--   Indexing starts at 0, not 1
--   There are methods (functions) associated with data types. Each data type has its own set of methods.
--   Python using indentation rules for blocks of code! (How old fashion... Like cobol.) (The Python standard is 4 spaces.)
--   You can use "1_000" for "1000", the underscore improves readability....
-
-
-</div>
-
-
-</div>
 

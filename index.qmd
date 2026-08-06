@@ -178,7 +178,7 @@ schedule <- data.frame(
     '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Welcome and Foundations</a> <br>
     <a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Optimizing Investment Portfolios</a>' ,
     'Participants learn how to construct an optimal investment portfolio <br>
-    <a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/ClaimCounts.ipynb">Topic 1 Jupyter Notebook</a> <br>
+    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/InvestmentPortfolios.ipynb">Topic 1 Jupyter Notebook on Investment Portfolios</a> <br>
     <a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Optimizing Investment Portfolios Gemini Notebook</a>',
     "<i>Coffee Break</i>",
     "<b>Topic 2</b>. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks",
@@ -466,8 +466,8 @@ To deliver this course, we will utilize some resources that may be unfamiliar to
    *  We will use the free base system - you only need a (free) Google account.
    *  Colab handles both R and python code - perfect for our needs.
    *  Machine learning applications often depend upon large datasets and utilize computationally intensive algorithms - Colab is designed to accomodate these demands.
-*  [Jupyter notebooks](https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/Introduction%20to%20Jupyter%20Notebooks.ipynb) provide a handy way to combine executable code, code outputs, and text into one connected file.    
-   *  You can take a look at the course notebooks by going to [nbviewer site](https://nbviewer.org/). Then, enter the course Github repo URL [https://github.com/OpenActTextDev/ActuarialRegression](https://github.com/OpenActTextDev/ActuarialRegression/tree/main/Notebooks), select the folder and then a notebook that you want to view.
+*  [Jupyter notebooks](https://nbviewer.org/github/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/Introduction%20to%20Jupyter%20Notebooks.ipynb) provide a handy way to combine executable code, code outputs, and text into one connected file.    
+   *  You can take a look at the course notebooks by going to [nbviewer site](https://nbviewer.org/). Then, enter the course Github repo URL [https://github.com/OpenActTextDev/ConstructPortfolio](https://github.com/OpenActTextDev/ConstructPortfolio/tree/main/Notebooks), select the folder and then a notebook that you want to view.
    *  To interact with notebook, go to Colab!
 
 

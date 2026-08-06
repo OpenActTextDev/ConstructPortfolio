@@ -667,7 +667,7 @@ document.getElementById("defaultOpen").click();
 <li><a href="https://colab.research.google.com/">Google colaboratory</a> (colab for short) is a cloud-based system of servers designed to process machine learning code.
 <ul>
 <li>We will use the free base system - you only need a (free) Google account.</li>
-<li>Colab handles both R and python code - perfect for our needs.</li>
+<li>Colab handles both R and python code. We will not use python for this workshop but it is a very handle tool for industry implementations.</li>
 <li>Machine learning applications often depend upon large datasets and utilize computationally intensive algorithms - Colab is designed to accomodate these demands.</li>
 </ul></li>
 <li><a href="https://nbviewer.org/github/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/Introduction%20to%20Jupyter%20Notebooks.ipynb">Jupyter notebooks</a> provide a handy way to combine executable code, code outputs, and text into one connected file.
@@ -679,7 +679,7 @@ document.getElementById("defaultOpen").click();
 </section>
 <section id="data" class="level1 unnumbered">
 <h1 class="unnumbered">Data</h1>
-<p>For this short course, you will find links to the data embedded in our notebooks (that you will retrieve on the fly). So, you will <strong>not</strong> need to download data in advance for this course.</p>
+<p>For this workshop, you will find links to the data embedded in our notebooks (that you will retrieve on the fly). So, you will <strong>not</strong> need to download data in advance.</p>
 <h6 style="text-align: left;" class="anchored" data-anchor-id="data">
 <a id="displayText.Data.Hide" href="javascript:toggleText('toggleText.Data.Hide','displayText.Data.Hide');"><i><strong>More Data Resources</strong></i></a>
 </h6>
@@ -692,6 +692,29 @@ document.getElementById("defaultOpen").click();
 </ul></li>
 <li><a href="https://openacttexts.github.io/LDAVer2/DataResources.html#other-data-sources">Loss Data Analytics List of Other Data Resources</a> - in this open actuarial textbook, many interesting datasets are described, including the Kaggle competitions datasets.</li>
 <li><a href="https://instruction.bus.wisc.edu/jfrees/jfreesbooks/PredictiveModelingVol1/index.htm">Predictive Modeling in Actuarial Science</a> These are some other data sets, with R code, useful for regression applications.</li>
+</ul>
+</div>
+</section>
+<section id="two-chatbots-gemini-in-colab-and-gemini-notebooks" class="level1 unnumbered">
+<h1 class="unnumbered">Two Chatbots: Gemini in Colab and Gemini Notebooks</h1>
+<h6 style="text-align: left;" class="anchored" data-anchor-id="two-chatbots-gemini-in-colab-and-gemini-notebooks">
+<a id="displayText.ChatBots.Hide" href="javascript:toggleText('toggleText.ChatBots.Hide','displayText.ChatBots.Hide');"><i><strong>Do I need two chatbots?</strong></i></a>
+</h6>
+<div id="toggleText.ChatBots.Hide" style="display: none">
+<ul>
+<li>In Google Colab, you will see a Gemini chatbot sitting on the right next to the code. I think you will find this very handy for helping you fix and understand the purpose of the code.</li>
+<li>If you want, you can also ask Gemini Notebook about the code.
+<ul>
+<li>Gemini Notebook only knows what is in the uploaded sources, it does not browse the internet.</li>
+<li>Because there is ‘R’ code in the uploaded sources, it can give some insights in to ‘R’ questions.</li>
+<li>However, the Gemini chatbot has more resources available and is especially aware of the Colab environment, so I recommend going to there first for ‘R’ question</li>
+</ul></li>
+<li>So, why bother with Gemini Notebook?
+<ul>
+<li>The big strength is that it only knows what’s in the uploaded sources, it does not browse the internet.</li>
+<li>This means it can give responses with direct attribution in the uploaded sources, very handy.</li>
+<li>In addition, because of its limited sources, it is much less likely to be prone to “hallucination” (making things up) when compared to more general chatbots.</li>
+</ul></li>
 </ul>
 </div>
 </section>

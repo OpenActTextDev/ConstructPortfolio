@@ -71,14 +71,14 @@ PdfEval  <- knitr:::is_latex_output()
 ```
 
 
-**Course Overview.** This short course will show how to use techniques from probability, statistics, and optimization to build algorithms that construct optimal risk insurable portfolios under budget constraints. The arguments, case studies, and code will be drawn primarily from a recently published text by the course presenter, *Constructing Insurable Risk Portfolios*. A html version of the book is [freely available](https://users.ssc.wisc.edu//~ewfrees/InsurableRisks/).
+**Course Overview.** This workshop will show how to use techniques from probability, statistics, and optimization to build algorithms that construct optimal risk insurable portfolios under budget constraints. The analytical approach, case studies, and code will be drawn primarily from a recently published text, *Constructing Insurable Risk Portfolios*, written by the workshop presenter. A html version of the book is [freely available](https://users.ssc.wisc.edu//~ewfrees/InsurableRisks/).
 
-`r HideText('Begin.Hide', 'More on the Course Overview: Statistical and Machine Learning.')`  In contrast to statistical learning, machine learning only uses algorithms that can learn from the data and do not employ an underpinning probabilistic framework. Due to their popularity and widespread use, we provide an overview with an emphasis on actuarial applications. Our main focus is on neural networks and the "deep learning" associated with many layers of a network. Without the need to develop reasoning based on probabilistic models, the machine learning community has developed approaches to handle a broad set of problems including those from computer vision, text recognition, and natural language processing; we demonstrate these applications in this course. 
+`r HideText('Begin.Hide', 'More on the Course Overview: Constructing Insurable Risk Portfolios')`  
+Firms face many risks, such as damage to their buildings due to fire, liability resulting from management misbehavior, and threats external to the organization like cyber attacks. Because the financial impact of these risks can be mitigated by using risk transfer tools like insurance, we think of them as insurable risks. Firms are financially responsible for these risks, essentially “owning” them. This naturally leads to the idea of managing them as a portfolio. This book shows how risk managers can manage a risk portfolio cost-effectively by adapting financial concepts of diversification to insurable risk management.
 
-This course will provide participants with a guided tour of the statistical and machine learning landscapes. Our goals are to: 
+**Who is this workshop for**? It is written for financial analysts who advise risk managers, such as commercial insurers, risk brokers, and reinsurers, who are responsible for risk retention and risk portfolio management. Risk managers are accustomed to using their knowledge of industry practices and experience in the field to make retention recommendations. This book introduces techniques that provide an objective framework to supplement, and corroborate, an advisor’s thoughts. While no prior industry knowledge is required, familiarity with the applications will enhance the reading experience. As such, it is also suitable for students and other academics seeking an entry point into industry applications as well as industry analysts who would like an introduction to new developments. The book equips students, academics, and practitioners with quantitative tools for analyzing real-world risk portfolios. Further, it empowers financial analysts to advise risk managers with data-driven insights to enhance their advisory role.
 
-(1)  give participants a deep understanding of what this set of tools can achieve in actuarial contexts, and 
-(2)  provide a springboard for participants that will allow them to develop additional expertise using machine learning approaches.
+**What is this workshop about**? It introduces a novel approach for constructing data-driven insurable risk portfolios. Drawing inspiration from Markowitz portfolio theory, it leverages techniques from probability, statistics, and optimization to build algorithms that create optimal risk insurance portfolios under budget constraints. As such, outputs of the algorithm include a frontier that portrays the uncertainty of a portfolio versus a cost of transferring risks. A visual display of this frontier, mirroring familiar Markowitz investment tools, allows for informed decision-making and seamless adoption by risk advisors.
 
 ***
 
@@ -86,9 +86,13 @@ This course will provide participants with a guided tour of the statistical and 
 
 <br>
 
-**Course Format.** The format of the course will consist of alternating blocks between presentations of the underlying principles and practical applications. In a typical block, the instructor will spend 30 minutes reviewing the insurance motivation and key mathematical underpinnings. This will be followed by a 30 minute block of time in which participants will actively explore a selected case study. Thus, it is anticipated that participants will bring a laptop. The case studies will utilize the statistical package ‘R’. This package is written by statisticians and its approach is tied directly to statistical applications. Participants with some familiarity with ‘R’ will benefit most from the course. 
+**Course Format.** The format of the course will consist of alternating blocks between presentations of the underlying principles and practical applications. In a typical block, the instructor will spend 45 minutes reviewing the insurance motivation and key mathematical underpinnings. This will be followed by a 45 minute block of time in which participants will actively explore a selected case study. Thus, it is anticipated that participants will **bring a laptop**. For this workshop, you only need a (free) **Google account**.
 
-`r HideText('Begin2.Hide', 'More on the Course Format: Coding in R and Python.')` For the foundations, the statistical learning component, and many of the case studies, we will utilize the statistical package 'R'. This package is written by statisticians and its approach is tied directly to statistical applications. Participants with some familiarity with 'R' will benefit most from the course. For the machine learning components, we provide code from the general programming language 'python'. We do not assume prior knowledge of python but will provide code so that participants can calibrate machine learning models using case studies. One of the benefits of the course is to expose participants to the power of python.
+
+`r HideText('Begin2.Hide', 'More on the Course Format: You only need to bring a laptop and get a Google Account')` 
+For this workshop, you will need a free Google account (if you have a Gmail address, then you have a Google account). If you do not already have one, please create an account at <https://accounts.google.com/signup>. You will use your Google account to access Google Colab, Gemini Notebook, and if you would like to save intermediate work, Google Drive.
+
+To facilitate active learning, you will explore case studies that utilize the statistical package ‘R’. This package is written by statisticians and its approach is tied directly to statistical applications. Participants with some familiarity with ‘R’ will benefit most from the course. However, we will use Google colab, so you do not need to have 'R' installed on your laptop nor will you need to download datasets in advance. Just a laptop and a Google account!
 
 </div>
 
@@ -106,53 +110,26 @@ library(kableExtra)
 
 schedule <- data.frame(
   Time = c(
-    "9:00–9:20 am",
-    "9:20–10:00 am",
-    "10:00–10:30 am",
-    "10:30–11:00 am",
-    "11:00–11:45 am",
-    "11:45–12:30 pm",
-    "12:30–2:00 pm",
-    "2:00–2:45 pm",
-    "2:45–3:30 pm",
-    "3:30–3:50 pm",
-    "3:50–4:20 pm",
-    "4:20–4:50 pm",
-    "4:50–5:00 pm"
+    "9:00–9:20 am", "9:20–10:00 am", "10:00–10:30 am",  "10:30–11:00 am",
+    "11:00–11:45 am", "11:45–12:30 pm",  "12:30–2:00 pm",
+    "2:00–2:45 pm", "2:45–3:30 pm", "3:30–3:50 pm",
+    "3:50–4:20 pm", "4:20–4:50 pm", "4:50–5:00 pm"
   ),
   Activity = c(
     "<b>Welcome</b>, Introduction to the workshop,<br>&nbsp;&nbsp;&nbsp;How it will work, What you can get out of it.",
     "<b>Topic 1</b>. Introduction to <i>Constructing Insurable Risk Portfolios</i>",
-    "Participants will explore features and learn how to construct an optimal investment portfolio",
-    "Coffee Break",
+    "Participants learn how to construct an optimal investment portfolio",
+    "<i>Coffee Break</i>",
     "<b>Topic 2</b>. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks",
-    "Participants will explore health data",
-    "Lunch",
-    "<b>Topic 3</b>. Optimizing Retention with ANU Data",
-    "Participants will explore Wisconsin Data",
-    "Break",
+    "Participants will work with code to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.",
+    "<i>Lunch</i>",
+    "<b>Topic 3</b>. Optimizing Risk Retention with ANU Data",
+    "Participants will explore optimizing risk portfolios using commercial insurance data from Wisconsin",
+    "<i>Break</i>",
     "<b>Topic 4</b>. Incorporating Spatial Dependence",
     "Participants will explore Florida flood insurance data",
-    "Wrap-Up"
+    "<i>Wrap-Up</i>"
   ),  stringsAsFactors = FALSE)
-
-# kbl(schedule,
-#   caption = "<b>Detailed Schedule</b>", escape = FALSE,
-#   align = c("c", "l"),   format = "html",
-#   table.attr = 'style="width:790px; table-layout:fixed;"') %>%  
-#   kable_styling( full_width = FALSE,  position = "center",  bootstrap_options = "condensed" ) %>%
-#   column_spec( 1, width = "140px" , border_right = TRUE,
-#     extra_css = paste("width:140px;", "min-width:140px;", "max-width:140px;", "white-space:nowrap;")
-#   ) %>%
-#   column_spec(2,  width = "650px",
-#     extra_css = paste("width:650px;", "min-width:650px;", "max-width:650px;", 
-#                       "overflow-wrap:break-word;" ) ) %>%
-#   row_spec(  c(1, 4, 7, 10),   extra_css = "border-bottom:1px solid black;" )
-
-```
-
-
-```{r echo = FALSE}
 
 width1_num <- 180
 width2_num <- 550
@@ -173,7 +150,7 @@ kbl(schedule,  escape = FALSE,
               extra_css = paste0( "width:", width2, ";", "min-width:", width2, ";",
                           "max-width:", width2, ";","overflow-wrap:break-word;" )
   ) %>%
-  row_spec( c(1, 4, 7, 10),extra_css = "border-bottom:1px solid black;"   )
+  row_spec( c(4, 7, 10),extra_css = "border-bottom:1px solid black;"   )
 
 
 ```
@@ -182,16 +159,73 @@ kbl(schedule,  escape = FALSE,
 
 `r HideText('Section4122.Hide', 'A More Detailed Plan')`   
 
-*  Each two hour block consists of 50 minutes of lecture, with 40 minutes interactive work and a 30 minute break.
-*  So, four blocks per day, with three days in total
+*  Each block consists of a lecture, with substantial time for interactive work and a healthy break.
+*  This table will be updated later...
 
 
-```{r Table12, echo = FALSE}
+```{r echo = FALSE}
+library(kableExtra)
 
-Topics1 <- c('<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Welcome and Foundations <br> Hello to Google Colab</a>', 
-             '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1B_30June.pdf">Classical Regression Modeling</a>',
-             '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession2A_10July.pdf">Resampling, Cross-validation and Regularisation</a>', '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession2B_10July.pdf">Classification, Logistic Regression and Trees</a>')
-Topics2 <- c('<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession3A_10July.pdf">Tree-based Ensemble methods and Interpretability</a>', 
+schedule <- data.frame(
+  Time = c(
+    "9:00–9:20 am", "9:20–10:00 am", "10:00–10:30 am",  "10:30–11:00 am",
+    "11:00–11:45 am", "11:45–12:30 pm",  "12:30–2:00 pm",
+    "2:00–2:45 pm", "2:45–3:30 pm", "3:30–3:50 pm",
+    "3:50–4:20 pm", "4:20–4:50 pm", "4:50–5:00 pm"
+  ),
+  Activity = c(
+    "<b>Welcome</b>, Introduction to the workshop,<br>&nbsp;&nbsp;&nbsp;How it will work, What you can get out of it.",
+    '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Welcome and Foundations</a> <br>
+    <a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Optimizing Investment Portfolios</a>' ,
+    'Participants learn how to construct an optimal investment portfolio <br>
+    <a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/ClaimCounts.ipynb">Topic 1 Jupyter Notebook</a> <br>
+    <a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Optimizing Investment Portfolios Gemini Notebook</a>',
+    "<i>Coffee Break</i>",
+    "<b>Topic 2</b>. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks",
+    "Participants will work with code to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.",
+    "<i>Lunch</i>",
+    "<b>Topic 3</b>. Optimizing Risk Retention with ANU Data",
+    "Participants will explore optimizing risk portfolios using commercial insurance data from Wisconsin",
+    "<i>Break</i>",
+    "<b>Topic 4</b>. Incorporating Spatial Dependence",
+    "Participants will explore Florida flood insurance data",
+    "<i>Wrap-Up</i>"
+  ),  stringsAsFactors = FALSE)
+
+width1_num <- 180
+width2_num <- 550
+
+width1 <- paste0(width1_num, "px")
+width2 <- paste0(width2_num, "px")
+table_width <- paste0(width1_num + width2_num, "px")
+
+kbl(schedule,  escape = FALSE,
+  align = c("c", "l"),  format = "html",
+  table.attr = paste0( 'style="width:', table_width,  '; table-layout:fixed;"'  )  ) %>%
+  kable_styling( full_width = FALSE, position = "center", bootstrap_options = "condensed" ) %>%
+  column_spec(1,  width = width1, border_right = TRUE,
+    extra_css = paste0( "width:", width1, ";",  "min-width:", width1, ";",
+      "max-width:", width1, ";",  "white-space:nowrap;" )
+  ) %>%
+  column_spec(2,  width = width2, 
+              extra_css = paste0( "width:", width2, ";", "min-width:", width2, ";",
+                          "max-width:", width2, ";","overflow-wrap:break-word;" )
+  ) %>%
+  row_spec( c(4, 7, 10),extra_css = "border-bottom:1px solid black;"   )
+
+
+```
+
+
+```{r Table12, echo = FALSE, eval = FALSE}
+
+Presentations <- c('<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Welcome and Foundations <br> Topic 1</a>', 
+             '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1B_30June.pdf"> Topic 2</a>',
+             '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession2A_10July.pdf"> Topic 3</a>', '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession2B_10July.pdf"> Topic 4</a>')
+
+
+
+Notebooks <- c('<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession3A_10July.pdf">Tree-based Ensemble methods and Interpretability</a>', 
              '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession3B_18July.pdf">Big Data, Dimension Reduction and Non-Supervised Learning</a>',
             '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession4A_09July.pdf">Neural Networks</a>', 
             '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession4B_18July.pdf">Graphic Data Neural Networks</a>', '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/Fei%20Huang_Ethical%20AI%20for%20Actuaries%20_CAA.pdf">Fei Huang Thoughts on Ethics</a>')
@@ -199,12 +233,8 @@ Topics3 <- c('<a href="https://github.com/OpenActTextDev/ActuarialRegression/blo
              '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession5B_10July.pdf">Artificial Intelligence, Natural Language Processing, and ChatGPT</a>',
              "Dani Bauer Insights", "Applications and Wrap-Up")
 Topics <- c(Topics1, Topics2, Topics3)
-Dayplace <- c("Monday Morning", "", "Monday Afternoon","",
-              "Tuesday Morning", "", "Tuesday Afternoon", "", "Tuesday 4 pm",
-              "Wednesday Morning", "", "Wednesday After Lunch",  "Wednesday Afternoon")
-  #c(1, rep("",3), 2, rep("",4), 3, rep("", 3))
-Presenter <- c(rep("Jed",2), rep("Andrés", 3), rep("Jed",3), "Fei",
-               "Jed", "Jed", "Dani", "Andrés")
+
+
 DataSets <- c('<a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/AutoLiabilityClaims.ipynb">Auto Liability Claims</a>', 
   '<a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/MEPS.ipynb">Medical Expenditures (MEPS)</a>',
   '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/HousePriceRegularisation.ipynb">Seattle House Prices</a>',
@@ -266,7 +296,7 @@ You can contact Jed at <jfrees@bus.wisc.edu>. See the [Frees Homepage](https://s
 # Google Gemini Notebooks {-}
 
 
-I am sharing read-only Gemini Notebooks with you. **This tool is like a smart study assistant that only knows the content I uploaded — so it is focused, grounded, and safe to use!**
+In the Detailed Course Schedule, you will find links to the read-only Gemini Notebooks that I am sharing with. **This tool is like a smart study assistant that only knows the content I uploaded — so it is focused, grounded, and safe to use!**
 
 ####  **Step-by-Step Guide (Click to Reveal Each Step)** {-}
 
@@ -291,14 +321,14 @@ Use these prompts to build and test your knowledge.
 
 #### Remembering {-}
 
-*  What are the five main accounts on a balance sheet?
-*  What is the definition of "moral hazard"?
-*  Name the four components of the marketing mix.
-*  List the different types of property ownership.
+*  What are the five top risks from the Aon study?
+*  What is the definition of an "insurable risk"?
+*  Name the joint distribution function of two uniform random variables.
+
 
 #### Understanding {-}
 
-*  Explain the double-entry accounting system.
+*  Explain the differences between assets and liability risk portfolio strategies.
 *  How does the law of large numbers apply to insurance?
 *  Summarize the key tenets of McGregor's Theory X and Theory Y.
 *  Describe the difference between a push and a pull inventory system.

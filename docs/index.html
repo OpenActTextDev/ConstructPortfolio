@@ -264,26 +264,24 @@ document.getElementById("defaultOpen").click();
 </ul></li>
 </ul>
 <hr>
-<p><strong>Course Overview.</strong> This short course will show how to use techniques from probability, statistics, and optimization to build algorithms that construct optimal risk insurable portfolios under budget constraints. The arguments, case studies, and code will be drawn primarily from a recently published text by the course presenter, <em>Constructing Insurable Risk Portfolios</em>. A html version of the book is <a href="https://users.ssc.wisc.edu//~ewfrees/InsurableRisks/">freely available</a>.</p>
+<p><strong>Course Overview.</strong> This workshop will show how to use techniques from probability, statistics, and optimization to build algorithms that construct optimal risk insurable portfolios under budget constraints. The analytical approach, case studies, and code will be drawn primarily from a recently published text, <em>Constructing Insurable Risk Portfolios</em>, written by the workshop presenter. A html version of the book is <a href="https://users.ssc.wisc.edu//~ewfrees/InsurableRisks/">freely available</a>.</p>
 <h6 style="text-align: left;" class="anchored">
-<a id="displayText.Begin.Hide" href="javascript:toggleText('toggleText.Begin.Hide','displayText.Begin.Hide');"><i><strong>More on the Course Overview: Statistical and Machine Learning.</strong></i></a>
+<a id="displayText.Begin.Hide" href="javascript:toggleText('toggleText.Begin.Hide','displayText.Begin.Hide');"><i><strong>More on the Course Overview: Constructing Insurable Risk Portfolios</strong></i></a>
 </h6>
 <div id="toggleText.Begin.Hide" style="display: none">
-<p>In contrast to statistical learning, machine learning only uses algorithms that can learn from the data and do not employ an underpinning probabilistic framework. Due to their popularity and widespread use, we provide an overview with an emphasis on actuarial applications. Our main focus is on neural networks and the “deep learning” associated with many layers of a network. Without the need to develop reasoning based on probabilistic models, the machine learning community has developed approaches to handle a broad set of problems including those from computer vision, text recognition, and natural language processing; we demonstrate these applications in this course.</p>
-<p>This course will provide participants with a guided tour of the statistical and machine learning landscapes. Our goals are to:</p>
-<ol type="1">
-<li>give participants a deep understanding of what this set of tools can achieve in actuarial contexts, and</li>
-<li>provide a springboard for participants that will allow them to develop additional expertise using machine learning approaches.</li>
-</ol>
+<p>Firms face many risks, such as damage to their buildings due to fire, liability resulting from management misbehavior, and threats external to the organization like cyber attacks. Because the financial impact of these risks can be mitigated by using risk transfer tools like insurance, we think of them as insurable risks. Firms are financially responsible for these risks, essentially “owning” them. This naturally leads to the idea of managing them as a portfolio. This book shows how risk managers can manage a risk portfolio cost-effectively by adapting financial concepts of diversification to insurable risk management.</p>
+<p><strong>Who is this workshop for</strong>? It is written for financial analysts who advise risk managers, such as commercial insurers, risk brokers, and reinsurers, who are responsible for risk retention and risk portfolio management. Risk managers are accustomed to using their knowledge of industry practices and experience in the field to make retention recommendations. This book introduces techniques that provide an objective framework to supplement, and corroborate, an advisor’s thoughts. While no prior industry knowledge is required, familiarity with the applications will enhance the reading experience. As such, it is also suitable for students and other academics seeking an entry point into industry applications as well as industry analysts who would like an introduction to new developments. The book equips students, academics, and practitioners with quantitative tools for analyzing real-world risk portfolios. Further, it empowers financial analysts to advise risk managers with data-driven insights to enhance their advisory role.</p>
+<p><strong>What is this workshop about</strong>? It introduces a novel approach for constructing data-driven insurable risk portfolios. Drawing inspiration from Markowitz portfolio theory, it leverages techniques from probability, statistics, and optimization to build algorithms that create optimal risk insurance portfolios under budget constraints. As such, outputs of the algorithm include a frontier that portrays the uncertainty of a portfolio versus a cost of transferring risks. A visual display of this frontier, mirroring familiar Markowitz investment tools, allows for informed decision-making and seamless adoption by risk advisors.</p>
 <hr>
 </div>
 <p><br></p>
-<p><strong>Course Format.</strong> The format of the course will consist of alternating blocks between presentations of the underlying principles and practical applications. In a typical block, the instructor will spend 30 minutes reviewing the insurance motivation and key mathematical underpinnings. This will be followed by a 30 minute block of time in which participants will actively explore a selected case study. Thus, it is anticipated that participants will bring a laptop. The case studies will utilize the statistical package ‘R’. This package is written by statisticians and its approach is tied directly to statistical applications. Participants with some familiarity with ‘R’ will benefit most from the course.</p>
+<p><strong>Course Format.</strong> The format of the course will consist of alternating blocks between presentations of the underlying principles and practical applications. In a typical block, the instructor will spend 45 minutes reviewing the insurance motivation and key mathematical underpinnings. This will be followed by a 45 minute block of time in which participants will actively explore a selected case study. Thus, it is anticipated that participants will <strong>bring a laptop</strong>. For this workshop, you only need a (free) <strong>Google account</strong>.</p>
 <h6 style="text-align: left;" class="anchored">
-<a id="displayText.Begin2.Hide" href="javascript:toggleText('toggleText.Begin2.Hide','displayText.Begin2.Hide');"><i><strong>More on the Course Format: Coding in R and Python.</strong></i></a>
+<a id="displayText.Begin2.Hide" href="javascript:toggleText('toggleText.Begin2.Hide','displayText.Begin2.Hide');"><i><strong>More on the Course Format: You only need to bring a laptop and get a Google Account</strong></i></a>
 </h6>
 <div id="toggleText.Begin2.Hide" style="display: none">
-<p>For the foundations, the statistical learning component, and many of the case studies, we will utilize the statistical package ‘R’. This package is written by statisticians and its approach is tied directly to statistical applications. Participants with some familiarity with ‘R’ will benefit most from the course. For the machine learning components, we provide code from the general programming language ‘python’. We do not assume prior knowledge of python but will provide code so that participants can calibrate machine learning models using case studies. One of the benefits of the course is to expose participants to the power of python.</p>
+<p>For this workshop, you will need a free Google account (if you have a Gmail address, then you have a Google account). If you do not already have one, please create an account at <a href="https://accounts.google.com/signup" class="uri">https://accounts.google.com/signup</a>. You will use your Google account to access Google Colab, Gemini Notebook, and if you would like to save intermediate work, Google Drive.</p>
+<p>To facilitate active learning, you will explore case studies that utilize the statistical package ‘R’. This package is written by statisticians and its approach is tied directly to statistical applications. Participants with some familiarity with ‘R’ will benefit most from the course. However, we will use Google colab, so you do not need to have ‘R’ installed on your laptop nor will you need to download datasets in advance. Just a laptop and a Google account!</p>
 </div>
 <p><br></p>
 <p><strong>Target Audience</strong>: Practicing actuaries, students, and educators interested in exposure to the foundations of insurance analytics.</p>
@@ -304,8 +302,8 @@ document.getElementById("defaultOpen").click();
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap; border-bottom: 1px solid black;">9:00–9:20 am</td>
-<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word; border-bottom: 1px solid black;"><strong>Welcome</strong>, Introduction to the workshop,<br>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">9:00–9:20 am</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><strong>Welcome</strong>, Introduction to the workshop,<br>
 &nbsp;&nbsp;&nbsp;How it will work, What you can get out of it.</td>
 </tr>
 <tr class="even">
@@ -314,11 +312,11 @@ document.getElementById("defaultOpen").click();
 </tr>
 <tr class="odd">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">10:00–10:30 am</td>
-<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Participants will explore features and learn how to construct an optimal investment portfolio</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Participants learn how to construct an optimal investment portfolio</td>
 </tr>
 <tr class="even">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap; border-bottom: 1px solid black;">10:30–11:00 am</td>
-<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word; border-bottom: 1px solid black;">Coffee Break</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word; border-bottom: 1px solid black;"><em>Coffee Break</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">11:00–11:45 am</td>
@@ -326,23 +324,23 @@ document.getElementById("defaultOpen").click();
 </tr>
 <tr class="even">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">11:45–12:30 pm</td>
-<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Participants will explore health data</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Participants will work with code to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap; border-bottom: 1px solid black;">12:30–2:00 pm</td>
-<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word; border-bottom: 1px solid black;">Lunch</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word; border-bottom: 1px solid black;"><em>Lunch</em></td>
 </tr>
 <tr class="even">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">2:00–2:45 pm</td>
-<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><strong>Topic 3</strong>. Optimizing Retention with ANU Data</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><strong>Topic 3</strong>. Optimizing Risk Retention with ANU Data</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">2:45–3:30 pm</td>
-<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Participants will explore Wisconsin Data</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Participants will explore optimizing risk portfolios using commercial insurance data from Wisconsin</td>
 </tr>
 <tr class="even">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap; border-bottom: 1px solid black;">3:30–3:50 pm</td>
-<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word; border-bottom: 1px solid black;">Break</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word; border-bottom: 1px solid black;"><em>Break</em></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">3:50–4:20 pm</td>
@@ -354,7 +352,7 @@ document.getElementById("defaultOpen").click();
 </tr>
 <tr class="odd">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">4:50–5:00 pm</td>
-<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Wrap-Up</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><em>Wrap-Up</em></td>
 </tr>
 </tbody>
 </table>
@@ -365,112 +363,77 @@ document.getElementById("defaultOpen").click();
 </h6>
 <div id="toggleText.Section4122.Hide" style="display: none">
 <ul>
-<li>Each two hour block consists of 50 minutes of lecture, with 40 minutes interactive work and a 30 minute break.</li>
-<li>So, four blocks per day, with three days in total</li>
+<li>Each block consists of a lecture, with substantial time for interactive work and a healthy break.</li>
+<li>This table will be updated later…</li>
 </ul>
 <div class="cell" data-layout-align="center">
-<table class="lightable-classic table table-striped table-condensed caption-top table-sm small">
-<caption><strong>Detailed Schedule</strong></caption>
+<table class="table table-condensed caption-top table-sm table-striped small">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;">Day and Time</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;">Presenter</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; font-weight: bold;">Topics*</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; font-weight: bold;">Notebooks* for Participant Activity</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Time</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Activity</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center; width: 3.5cm;">Monday Morning</td>
-<td style="text-align: center;">Jed</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Welcome and Foundations<br>
-Hello to Google Colab</a></td>
-<td style="text-align: center; width: 6.5cm;"><a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/AutoLiabilityClaims.ipynb">Auto Liability Claims</a></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">9:00–9:20 am</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><strong>Welcome</strong>, Introduction to the workshop,<br>
+&nbsp;&nbsp;&nbsp;How it will work, What you can get out of it.</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; width: 3.5cm;"></td>
-<td style="text-align: center;">Jed</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1B_30June.pdf">Classical Regression Modeling</a></td>
-<td style="text-align: center; width: 6.5cm;"><a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/MEPS.ipynb">Medical Expenditures (MEPS)</a></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">9:20–10:00 am</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Welcome and Foundations</a><br>
+<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Optimizing Investment Portfolios</a></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; width: 3.5cm;">Monday Afternoon</td>
-<td style="text-align: center;">Andrés</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession2A_10July.pdf">Resampling, Cross-validation and Regularisation</a></td>
-<td style="text-align: center; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/HousePriceRegularisation.ipynb">Seattle House Prices</a></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">10:00–10:30 am</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Participants learn how to construct an optimal investment portfolio<br>
+<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/ClaimCounts.ipynb">Topic 1 Jupyter Notebook</a><br>
+<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Optimizing Investment Portfolios Gemini Notebook</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: center; width: 3.5cm;"></td>
-<td style="text-align: center;">Andrés</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession2B_10July.pdf">Classification, Logistic Regression and Trees</a></td>
-<td style="text-align: center; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/VicRoadCrashLrTree.ipynb">Victoria road crash data</a></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap; border-bottom: 1px solid black;">10:30–11:00 am</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word; border-bottom: 1px solid black;"><em>Coffee Break</em></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; width: 3.5cm;">Tuesday Morning</td>
-<td style="text-align: center;">Andrés</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession3A_10July.pdf">Tree-based Ensemble methods and Interpretability</a></td>
-<td style="text-align: center; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/VicRoadCrashRFBoosting.ipynb">Victoria road crash data</a></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">11:00–11:45 am</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><strong>Topic 2</strong>. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; width: 3.5cm;"></td>
-<td style="text-align: center;">Jed</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession3B_18July.pdf">Big Data, Dimension Reduction and Non-Supervised Learning</a></td>
-<td style="text-align: center; width: 6.5cm;"><a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/BigDataDimReduction.ipynb">Big Data, Dimension Reduction, and Non-Supervised Learning</a></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">11:45–12:30 pm</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Participants will work with code to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; width: 3.5cm;">Tuesday Afternoon</td>
-<td style="text-align: center;">Jed</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession4A_09July.pdf">Neural Networks</a></td>
-<td style="text-align: center; width: 6.5cm;"><a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/HousePriceRegression.ipynb">Seattle House Prices</a><br>
-<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/ClaimCounts.ipynb">Claim Counts</a></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap; border-bottom: 1px solid black;">12:30–2:00 pm</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word; border-bottom: 1px solid black;"><em>Lunch</em></td>
 </tr>
 <tr class="even">
-<td style="text-align: center; width: 3.5cm;"></td>
-<td style="text-align: center;">Jed</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession4B_18July.pdf">Graphic Data Neural Networks</a></td>
-<td style="text-align: center; width: 6.5cm;"><a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/MNIST.ipynb">MNIST Digits Data</a></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">2:00–2:45 pm</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><strong>Topic 3</strong>. Optimizing Risk Retention with ANU Data</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; width: 3.5cm;">Tuesday 4 pm</td>
-<td style="text-align: center;">Fei</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/Fei%20Huang_Ethical%20AI%20for%20Actuaries%20_CAA.pdf">Fei Huang Thoughts on Ethics</a></td>
-<td style="text-align: center; width: 6.5cm;"></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">2:45–3:30 pm</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Participants will explore optimizing risk portfolios using commercial insurance data from Wisconsin</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; width: 3.5cm;">Wednesday Morning</td>
-<td style="text-align: center;">Jed</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession5A_18July.pdf">Recurrent Neural Networks, Word Embedding</a></td>
-<td style="text-align: center; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/InsurerStockReturns.ipynb">Insurer Stock Returns</a></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap; border-bottom: 1px solid black;">3:30–3:50 pm</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word; border-bottom: 1px solid black;"><em>Break</em></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; width: 3.5cm;"></td>
-<td style="text-align: center;">Jed</td>
-<td style="text-align: left; width: 6.5cm;"><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession5B_10July.pdf">Artificial Intelligence, Natural Language Processing, and ChatGPT</a></td>
-<td style="text-align: center; width: 6.5cm;"></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">3:50–4:20 pm</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><strong>Topic 4</strong>. Incorporating Spatial Dependence</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; width: 3.5cm;">Wednesday After Lunch</td>
-<td style="text-align: center;">Dani</td>
-<td style="text-align: left; width: 6.5cm;">Dani Bauer Insights</td>
-<td style="text-align: center; width: 6.5cm;"></td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">4:20–4:50 pm</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;">Participants will explore Florida flood insurance data</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; width: 3.5cm;">Wednesday Afternoon</td>
-<td style="text-align: center;">Andrés</td>
-<td style="text-align: left; width: 6.5cm;">Applications and Wrap-Up</td>
-<td style="text-align: center; width: 6.5cm;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center; width: 3.5cm; font-size: 12px;"></td>
-<td style="text-align: center; font-size: 12px;"></td>
-<td style="text-align: left; width: 6.5cm; font-size: 12px;">*Click on a Topic to take you to a pdf of the slides.</td>
-<td style="text-align: center; width: 6.5cm; font-size: 12px;">*Click on a Notebook to take you to an html of the notebook (provided by NB viewer).</td>
+<td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">4:50–5:00 pm</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><em>Wrap-Up</em></td>
 </tr>
 </tbody>
 </table>
@@ -500,7 +463,7 @@ Hello to Google Colab</a></td>
 </section>
 <section id="google-gemini-notebooks" class="level1 unnumbered">
 <h1 class="unnumbered">Google Gemini Notebooks</h1>
-<p>I am sharing read-only Gemini Notebooks with you. <strong>This tool is like a smart study assistant that only knows the content I uploaded — so it is focused, grounded, and safe to use!</strong></p>
+<p>In the Detailed Course Schedule, you will find links to the read-only Gemini Notebooks that I am sharing with. <strong>This tool is like a smart study assistant that only knows the content I uploaded — so it is focused, grounded, and safe to use!</strong></p>
 <section id="step-by-step-guide-click-to-reveal-each-step" class="level4 unnumbered">
 <h4 class="unnumbered anchored"><strong>Step-by-Step Guide (Click to Reveal Each Step)</strong></h4>
 <h6 style="text-align: left;" class="anchored">
@@ -525,16 +488,15 @@ Hello to Google Colab</a></td>
 <section id="remembering" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="remembering">Remembering</h4>
 <ul>
-<li>What are the five main accounts on a balance sheet?</li>
-<li>What is the definition of “moral hazard”?</li>
-<li>Name the four components of the marketing mix.</li>
-<li>List the different types of property ownership.</li>
+<li>What are the five top risks from the Aon study?</li>
+<li>What is the definition of an “insurable risk”?</li>
+<li>Name the joint distribution function of two uniform random variables.</li>
 </ul>
 </section>
 <section id="understanding" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="understanding">Understanding</h4>
 <ul>
-<li>Explain the double-entry accounting system.</li>
+<li>Explain the differences between assets and liability risk portfolio strategies.</li>
 <li>How does the law of large numbers apply to insurance?</li>
 <li>Summarize the key tenets of McGregor’s Theory X and Theory Y.</li>
 <li>Describe the difference between a push and a pull inventory system.</li>

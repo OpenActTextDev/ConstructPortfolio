@@ -42,6 +42,35 @@ ul.task-list li input[type="checkbox"] {
 <link href="index_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -251,7 +280,7 @@ document.getElementById("defaultOpen").click();
 
 
 <p><br></p>
-<p>This workshop will be held in conjunction with the <a href="https://simposiointernacionalaca.com/">IX Simposio Internacional de Actuaría</a>.</p>
+<p>This workshop will be held in conjunction with the <a href="https://simposiointernacionalaca.com/">IX Simposio Internacional de Actuaría, 2026</a>.</p>
 <p><strong>Prior Courses and Workshops</strong></p>
 <ul>
 <li><a href="https://actuarios.org.co/first-summer-camp-aca/">Curso Verano Asociación Colombiana de Actuarios, 2025</a>
@@ -264,7 +293,7 @@ document.getElementById("defaultOpen").click();
 </ul></li>
 </ul>
 <hr>
-<p><strong>Course Overview.</strong> This workshop will show how to use techniques from probability, statistics, and optimization to build algorithms that construct optimal risk insurable portfolios under budget constraints. The analytical approach, case studies, and code will be drawn primarily from a recently published text, <em>Constructing Insurable Risk Portfolios</em>, written by the workshop presenter. An online (html) version of the book is <a href="https://users.ssc.wisc.edu//~ewfrees/InsurableRisks/">freely available</a>.</p>
+<p><strong>Course Overview.</strong> This workshop will show you how to use techniques from probability, statistics, and optimization to build algorithms that construct risk insurable portfolios that are optimal under budget constraints. The analytical approach, case studies, and code will be drawn primarily from a recently published text, <em>Constructing Insurable Risk Portfolios</em>, written by the workshop presenter. An online (html) version of the book is <a href="https://users.ssc.wisc.edu//~ewfrees/InsurableRisks/">freely available</a>.</p>
 <h6 style="text-align: left;" class="anchored">
 <a id="displayText.Begin.Hide" href="javascript:toggleText('toggleText.Begin.Hide','displayText.Begin.Hide');"><i><strong>More on the Course Overview: Constructing Insurable Risk Portfolios</strong></i></a>
 </h6>
@@ -275,7 +304,7 @@ document.getElementById("defaultOpen").click();
 <hr>
 </div>
 <p><br></p>
-<p><strong>Course Format.</strong> The format of the course will consist of alternating blocks between presentations of the underlying principles and practical applications. In a typical block, the instructor will spend around 45 minutes reviewing the insurance motivation and key mathematical underpinnings. This will be followed by around 45 minutes in which participants will actively explore a selected case study.</p>
+<p><strong>Course Format.</strong> The format of the course will consist of alternating blocks between presentations of the underlying principles and practical applications. In a typical block, the instructor will spend around 45 minutes reviewing the insurance motivation and key mathematical underpinnings. This will be followed by about 45 minutes in which participants will actively explore a selected case study.</p>
 <ul>
 <li>Thus, it is anticipated that participants will <strong>bring a laptop</strong>.</li>
 <li>For this workshop, you only need a (free) <strong>Google account</strong>.</li>
@@ -324,7 +353,7 @@ document.getElementById("defaultOpen").click();
 </tr>
 <tr class="odd">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">11:00–11:45 am</td>
-<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><strong>Topic 2</strong>. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks</td>
+<td style="text-align: left; width: 550px; width: 550px; min-width: 550px; max-width: 550px; overflow-wrap: break-word;"><strong>Topic 2</strong>. Basic Tools: Risk Retention Functions and Risk Measures. Optimal Portfolio Construction.</td>
 </tr>
 <tr class="even">
 <td style="text-align: center; width: 180px; border-right: 1px solid; width: 180px; min-width: 180px; max-width: 180px; white-space: nowrap;">11:45–12:30 pm</td>
@@ -454,26 +483,25 @@ document.getElementById("defaultOpen").click();
 </section>
 <section id="about-the-instructor" class="level1 unnumbered">
 <h1 class="unnumbered">About the Instructor</h1>
-<p>You can click on the link to learn more about my background.</p>
+<p>You can click on the link to learn more about his background.</p>
 <h6 style="text-align: left;" class="anchored" data-anchor-id="about-the-instructor">
 <a id="displayText.Instructor.Hide" href="javascript:toggleText('toggleText.Instructor.Hide','displayText.Instructor.Hide');"><i><strong>Learn About the Instructor</strong></i></a>
 </h6>
 <div id="toggleText.Instructor.Hide" style="display: none">
 <p><img src="Frees_EdwardHiRes_LR.jpg" style="float:right; width:180px; margin-left:20px;">Edward (Jed) Frees is a Fellow of the American Statistical Association and a former Fellow of the Society of Actuaries. He served as founding chairperson of the Society of Actuaries’ Education and Research Section as well as a member of the Board of Directors of the Society of Actuaries; he has also served as a Trustee of the Actuarial Foundation. Professor Frees served as an actuarial representative to the Social Security Advisory Board’s Technical Panel on Methods and Assumptions. Professor Frees was the Editor and is currently on Honorary Advisory Boards for the <em>North American Actuarial Journal</em> and the <em>Annals of Actuarial Science</em>. He is also an Editor for <em>Insurance: Mathematics and Economics.</em></p>
-<p>Professor Frees is an emeritus professor at the University of Wisconsin-Madison and was a professor of actuarial studies with the Australian National University. He is</p>
+<p>Professor Frees is an emeritus professor at the University of Wisconsin-Madison and was a professor of actuarial studies with the Australian National University (2019-2024). He is</p>
 <ul>
-<li>the editor of the Spanish version of the open actuarial textbook, <a href="https://openacttexts.github.io/LDASpanish/">Loss Data Analytics</a>, is</li>
+<li>the editor of the Spanish version of the open actuarial textbook, <a href="https://openacttexts.github.io/LDASpanish/">Loss Data Analytics</a>,</li>
 <li>has completed a (free) Spanish translation of his regression modeling book, <a href="https://openacttextdev.github.io/RegressionSpanish/index.html">Modelado de Regresión con Aplicaciones Actuariales y Financieras</a>, and</li>
 <li>has completed his latest book, entitled <em>Constructing Insurable Risk Portfolios</em>.</li>
 </ul>
 </div>
-<p><br></p>
 <p>You can contact Jed at <a href="mailto:jfrees@bus.wisc.edu" class="email">jfrees@bus.wisc.edu</a>. See the <a href="https://sites.google.com/a/wisc.edu/jed-frees/home">Frees Homepage</a> for more information about his background.</p>
 <hr>
 </section>
 <section id="google-gemini-notebooks" class="level1 unnumbered">
 <h1 class="unnumbered">Google Gemini Notebooks</h1>
-<p>In the Detailed Workshop Schedule, you will find links to read-only Gemini Notebooks that I am sharing with. <strong>This tool is like a smart study assistant that only knows the content I uploaded — so it is focused, grounded, and safe to use!</strong></p>
+<p>In the Detailed Workshop Schedule above, you will find links to read-only Gemini Notebooks that are being shared. <strong>This tool is like a smart study assistant that only knows the content uploaded — so it is focused, grounded, and safe to use!</strong></p>
 <section id="step-by-step-guide-click-to-reveal-each-step" class="level4 unnumbered">
 <h4 class="unnumbered anchored"><strong>Step-by-Step Guide (Click to Reveal Each Step)</strong></h4>
 <h6 style="text-align: left;" class="anchored">
@@ -498,54 +526,50 @@ document.getElementById("defaultOpen").click();
 <section id="remembering" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="remembering">Remembering</h4>
 <ul>
-<li>What are the five top risks from the Aon study?</li>
-<li>What is the definition of an “insurable risk”?</li>
-<li>Name the joint distribution function of two uniform random variables.</li>
+<li><strong>Prompt Idea:</strong> What are the five top risks from the Aon study?</li>
+<li><strong>Prompt Idea:</strong> What is the definition of an “insurable risk”?</li>
+<li><strong>Prompt Idea:</strong> Name the joint distribution function of two uniform random variables.</li>
 </ul>
 </section>
 <section id="understanding" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="understanding">Understanding</h4>
 <ul>
-<li>Explain the differences between assets and liability risk portfolio strategies.</li>
-<li>How does the law of large numbers apply to insurance?</li>
-<li>Summarize the key tenets of McGregor’s Theory X and Theory Y.</li>
-<li>Describe the difference between a push and a pull inventory system.</li>
+<li><strong>Prompt Idea:</strong> Explain the differences between assets and liability risk portfolio strategies.</li>
+<li><strong>Prompt Idea:</strong> Based on the foundations laid out in Chapter 2, describe how contractual forms are used to decompose a firm’s risk. Explain how a risk advisor uses these tools to summarize both the <strong>uncertainty of the risk being retained</strong> and the <strong>financial cost of the risk being transferred</strong>.</li>
+<li><strong>Prompt Idea:</strong> In Chapter 4, the textbook transitions from analyzing a single risk to managing multivariate risks. Explain why <strong>copulas</strong> are introduced at this stage and how they help a financial analyst understand and model the dependence among multiple insurable risks under budget constraints</li>
+<li><strong>Prompt Idea:</strong> Describe how the book adapts Markowitz investment asset allocation theory to the management of liabilities and insurable risk portfolios. Explain how this quantitative framework helps financial analysts provide risk managers with an objective, data-driven framework to supplement and corroborate traditional industry experience.</li>
 </ul>
 </section>
 <section id="applying" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="applying">Applying</h4>
 <ul>
-<li>Given the list of transactions, prepare a simple income statement.</li>
-<li>Using the provided scenario, identify the insurable risks for a small business.</li>
-<li>Apply Maslow’s Hierarchy of Needs to a scenario where an employee is unmotivated.</li>
-<li>Based on the case study, what marketing mix strategy would you recommend for a new product launch?</li>
+<li><strong>Prompt Idea:</strong> Using the actuarial R packages listed in the book’s preliminary setup (specifically <code>library("actuar")</code>), write a functional R script to calculate the expected retained claims (<span class="math inline">\(RC_1(u)\)</span>) for a corporate risk modeled by a Gamma distribution at a specific retention limit <span class="math inline">\(u\)</span>. Test your code using the sample functions provided in the book’s introductory supplements.</li>
+<li><strong>Prompt Idea:</strong> Using the basic summary functions outlined in the textbook’s R code supplement, construct a customized R function to calculate the combined <strong>Additive Risk Transfer Cost (RTC)</strong> for two independent risk exposures. Ensure your program properly handles a portfolio where the first risk follows a Gamma distribution and the second follows a Pareto distribution.</li>
+<li><strong>Prompt Idea:</strong> Imagine you are hired as a financial analyst to advise a multi-line general insurer on their risk retention strategy. Identify which of the book’s primary datasets—the <strong>Australian National University (ANU) Case Study</strong> or the <strong>Wisconsin Property Fund Case Study</strong>—is designed for this specific industry application. Outline the steps you would take to load this dataset and apply its variables to model the insurer’s liability portfolio.</li>
 </ul>
 </section>
 <section id="analyzing" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="analyzing">Analyzing</h4>
 <ul>
-<li>Analyze the financial statements to identify trends in a company’s profitability over the last five years.</li>
-<li>Break down the components of a company’s valuation to determine what is driving its stock price.</li>
-<li>Analyze the ethical implications of a company’s decision to downsize its workforce.</li>
-<li>Compare the digital marketing campaigns of two competing companies, identifying their strengths and weaknesses.</li>
+<li><strong>Prompt Idea:</strong> Using the basic retention functions defined in the textbook’s R preliminaries, <strong>analyze</strong> the structural differences between modeling an exposure with a <strong>Gamma distribution</strong> (<span class="math inline">\(RC_1(u)\)</span>) versus a <strong>Pareto distribution</strong> (<span class="math inline">\(RC_2(u)\)</span>) at a given retention limit <span class="math inline">\(u\)</span>. Break down how the tail behavior of each distribution impacts the expected retained claims, and explain how these differences subsequently alter the behavior of the <strong>Additive Risk Transfer Cost</strong> (<span class="math inline">\(RTC(u_1, u_2)\)</span>).</li>
+<li><strong>Prompt Idea:</strong> <strong>Analyze</strong> the financial trade-off between the <strong>uncertainty of the risk a firm retains</strong> versus the <strong>cost of the risk it transfers</strong>. How does adjusting a contract’s retention limit mathematically alter both of these components simultaneously?</li>
+<li><strong>Prompt Idea:</strong> <strong>Analyze</strong> the structural differences between the <strong>Australian National University (ANU) Case Study</strong> and the <strong>Wisconsin Property Fund Case Study</strong>. How do their differing organizational roles (advising medium/large corporations vs.&nbsp;insuring multi-line general exposures) influence how you apply and interpret the Chapter 7 <strong>simulation strategy</strong> to their portfolios?</li>
 </ul>
 </section>
 <section id="evaluating" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="evaluating">Evaluating</h4>
 <ul>
-<li>Critique the company’s accounting practices based on GAAP principles.</li>
-<li>Evaluate the effectiveness of a company’s current risk management plan.</li>
-<li>Assess the success of a recent product launch using key performance indicators (KPIs).</li>
-<li>Evaluate a real estate investment property based on its potential for cash flow and appreciation.</li>
+<li><strong>Prompt Idea:</strong> A risk manager decides to use only <strong>stress testing</strong> to evaluate the reliability of an optimal insurable risk portfolio, arguing that <strong>sensitivity analysis</strong> and <strong>robustness planning</strong> are redundant. Critique this decision. Under what specific portfolio conditions would stress testing fail to capture the structural vulnerabilities that the other two perspectives are designed to reveal?</li>
+<li><strong>Prompt Idea:</strong> For a corporate client with a highly constrained risk-retention budget, an analyst defends the choice of a <strong>Gamma distribution</strong> over a heavy-tailed <strong>Pareto distribution</strong> to model severe losses, claiming it produces a safer optimal frontier. Evaluate the validity of this claim. To what extent does choosing a lighter-tailed distribution compromise the safety of the optimal retention limits when the budget is tightly constrained?</li>
+<li><strong>Prompt Idea:</strong> Contrast the mathematically rigorous, <strong>analytical optimization</strong> method used in two-risk portfolios with the <strong>simulation-based strategy</strong> implemented for multivariate portfolios. <strong>Evaluate</strong> which approach is more defensible for a multi-line general insurer, such as the <em>Wisconsin Property Fund</em>, and defend your choice based on the trade-off between mathematical precision and real-world business applicability.</li>
 </ul>
 </section>
 <section id="creating" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="creating">Creating</h4>
 <ul>
-<li>Draft a hypothetical budget for a new business based on the provided sales projections.</li>
-<li>Create a financial model to forecast a startup’s growth over the next five years.</li>
-<li>Design a new employee training program to address common workplace conflicts.</li>
-<li>Develop a social media content calendar for a new brand launching next quarter.</li>
+<li><strong>Prompt Idea:</strong> <strong>Formulate</strong> a customized risk-sharing contract for a corporate client facing a major risk modeled by a specific loss distribution (such as a Gamma or Pareto distribution). Your design must specify both a unique retention limit and a risk transfer mechanism that minimizes their total risk transfer cost under a strict, binding budget constraint.</li>
+<li><strong>Prompt Idea:</strong> <strong>Construct</strong> a step-by-step mathematical framework for resolving a multi-risk portfolio allocation problem that incorporates a <strong>copula</strong> to model dependency among the underlying risks. Outline how you would structure the objectives and constraints to map out a functional optimal risk-retention frontier under a fixed corporate budget.</li>
+<li><strong>Prompt Idea:</strong> <strong>Develop</strong> a comprehensive, data-driven risk advisory plan for either the <em>Wisconsin Property Fund</em> or the <em>Australian National University (ANU) Case Study</em>. Your plan must synthesize the empirical data, integrate the Chapter 7 simulation algorithm, and build a tailored portfolio strategy that addresses the unique organizational role of your chosen entity.</li>
 </ul>
 </section>
 </section>
@@ -555,27 +579,34 @@ document.getElementById("defaultOpen").click();
 <a id="displayText.StepCCandC.Hide" href="javascript:toggleText('toggleText.StepCCandC.Hide','displayText.StepCCandC.Hide');"><i><strong>Not Needed for a One Day Workshop.</strong></i></a>
 </h6>
 <div id="toggleText.StepCCandC.Hide" style="display: none">
-<p>Use these prompts to create new content and organize your thoughts.</p>
+<p>Welcome! As your teaching assistant for this course on constructing insurable risk portfolios, I would be delighted to help you adapt these learning prompts for your students. Focusing on these practical tasks is an excellent way to interact with the material, organize thoughts, and master the quantitative techniques.</p>
+<section id="outline-draft" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="outline-draft">1. Outline &amp; Draft</h3>
+<p>Use these prompts to structure technical writing, design reports, or prepare for corporate presentations based on actuarial frameworks.</p>
 <ul>
-<li><strong>Outline &amp; Draft</strong>: Ask Gemini Notebook to help you structure your writing.
-<ul>
-<li><em>Prompt Idea</em>: “Create an outline for an essay on corporate social responsibility.”</li>
-<li><em>Prompt Idea</em>: “Draft a 5-point executive summary for the report on the company’s annual performance.”</li>
-<li><em>Prompt Idea</em>: “Generate a presentation script for a pitch to potential investors based on the business plan.”</li>
-</ul></li>
-<li><strong>Summarize &amp; Synthesize</strong>: Get a quick overview of long documents or multiple sources.
-<ul>
-<li><em>Prompt Idea</em>: “Summarize the key arguments from the four articles on global trade.”</li>
-<li><em>Prompt Idea</em>: “Synthesize the main findings from the three market research reports into a single paragraph.”</li>
-<li><em>Prompt Idea</em>: “Create a table that compares the features of the competing products described in the sources.”</li>
-</ul></li>
-<li><strong>Build a Glossary</strong>: Create your own reference tool for key terms.
-<ul>
-<li><em>Prompt Idea</em>: “Find and list all the key financial terms and their definitions from the textbook.”</li>
-<li><em>Prompt Idea</em>: “Create a list of all the abbreviations used in the project management documents and what they stand for.”</li>
-<li><em>Prompt Idea</em>: “Find and define all the legal terms related to real estate transactions in the contract.”</li>
-</ul></li>
+<li><strong>Prompt Idea:</strong> Create an outline for an essay on how modern peer-to-peer (P2P) risk exchanges and robo-advising platforms can be quantitatively modeled using the liability portfolio tools discussed in <strong>Chapter 6</strong>.</li>
+<li><strong>Prompt Idea:</strong> Draft a 5-point executive summary for an actuarial advisory report analyzing the optimal risk retention strategy for the <strong>Wisconsin Property Fund Case Study</strong>.</li>
+<li><strong>Prompt Idea:</strong> Generate a presentation script for a pitch to a corporate board of directors explaining why they should adopt the <strong>constrained optimization framework</strong> of <strong>Chapter 3</strong> to balance the uncertainty of their retained risk against their risk transfer costs.</li>
 </ul>
+</section>
+<section id="summarize-synthesize" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="summarize-synthesize">2. Summarize &amp; Synthesize</h3>
+<p>These prompts will help you quickly digest dense mathematical concepts, compare methodologies, and visualize the relationships between different chapters of the textbook.</p>
+<ul>
+<li><strong>Prompt Idea:</strong> Summarize the key differences between managing exactly two risks analytically (<strong>Chapter 5</strong>) and solving the multivariate risk retention problem using the <strong>simulation-based strategy</strong> advocated in <strong>Chapter 7</strong>.</li>
+<li><strong>Prompt Idea:</strong> Synthesize the main findings of how the introduction of a <strong>copula-based dependence structure</strong> alters the optimal risk frontier compared to assuming complete independence (<strong>Chapter 4</strong>), in a single paragraph.</li>
+<li><strong>Prompt Idea:</strong> Create a table that compares the <strong>Australian National University (ANU) Case Study</strong> and the <strong>Wisconsin Property Fund Case Study</strong> in terms of their target audience, data structure, and real-world risk management applications.</li>
+</ul>
+</section>
+<section id="build-a-glossary" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="build-a-glossary">3. Build a Glossary</h3>
+<p>Actuarial science and portfolio optimization have a highly specialized vocabulary. These prompts will help build customized reference tools to keep track of key terms, software packages, and mathematical formulas.</p>
+<ul>
+<li><strong>Prompt Idea:</strong> Find and list all the key portfolio optimization and risk retention terms (such as <strong>‘optimal frontier’</strong>, <strong>‘retained claims’</strong>, and <strong>‘risk exchange’</strong>) and their definitions from the foundational material in <strong>Chapters 1 through 4</strong>.</li>
+<li><strong>Prompt Idea:</strong> Create a list of the specialized statistical <strong>R packages</strong> loaded in our preliminary setups (such as <code>actuar</code>, <code>copula</code>, and <code>CVXR</code>) and define what each package is used for in our portfolio calculations.</li>
+<li><strong>Prompt Idea:</strong> Find and define the core mathematical functions used for individual and combined risk calculations in our introductory supplements, including the retained claims functions <code>RC1(u)</code>, <code>RC2(u)</code>, and the <strong>Additive Risk Transfer Cost</strong> function <code>RTC(u1, u2)</code>.</li>
+</ul>
+</section>
 </div>
 </section>
 <section id="active-learning-self-assessment" class="level3 unnumbered">
@@ -585,26 +616,33 @@ document.getElementById("defaultOpen").click();
 </h6>
 <div id="toggleText.StepALandS.Hide" style="display: none">
 <p>Use these prompts to test your knowledge and prepare for exams.</p>
+<section id="generate-a-quiz" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="generate-a-quiz">1. Generate a Quiz</h3>
+<p>These prompts allow students to test their baseline recall of the mathematical setups, distributions, and case studies covered in the foundations of the course.</p>
 <ul>
-<li><strong>Generate a Quiz</strong>: Create multiple-choice or true/false questions.
-<ul>
-<li><em>Prompt Idea</em>: “Create a 5-question multiple-choice quiz on the principles of consumer behavior.”</li>
-<li><em>Prompt Idea</em>: “Generate five true or false questions about the company’s financial history.”</li>
-<li><em>Prompt Idea</em>: “Write a short answer quiz to test my knowledge of the concepts covered in the lecture on risk management.”</li>
-</ul></li>
-<li><strong>Create Flashcards</strong>: Turn concepts into flashcards for easy memorization.
-<ul>
-<li><em>Prompt Idea</em>: “Generate 10 flashcards on key concepts from the supply chain management module.”</li>
-<li><em>Prompt Idea</em>: “Create flashcards for all the major historical dates and events mentioned in the case study.”</li>
-<li><em>Prompt Idea</em>: “Generate a set of flashcards with terms on one side and their definitions on the other for the accounting chapter.”</li>
-</ul></li>
-<li><strong>Simulate a Discussion</strong>: Role-play a debate to understand different perspectives.
-<ul>
-<li><em>Prompt Idea</em>: “Act as a CFO and explain the budget cuts to me, using the provided financial report.”</li>
-<li><em>Prompt Idea</em>: “Debate the pros and cons of remote work from the perspective of both an employee and a manager.”</li>
-<li><em>Prompt Idea</em>: “Role-play as a client and ask me to justify the value proposition of my new business.”</li>
-</ul></li>
+<li><strong>Prompt Idea:</strong> Create a 5-question multiple-choice quiz on the organizational differences, target audiences, and data formats of the <strong>Australian National University (ANU) Case Study</strong> and the <strong>Wisconsin Property Fund Case Study</strong>.</li>
+<li><strong>Prompt Idea:</strong> Generate five true or false questions about the functions of the specialized <strong>R packages</strong> loaded in our preliminaries—such as <code>actuar</code> and <code>copula</code>—and their specific roles in solving multivariate risk portfolios.</li>
+<li><strong>Prompt Idea:</strong> Write a short-answer quiz to test my knowledge of how the <strong>expected retained claims functions</strong> (<span class="math inline">\(RC_1(u)\)</span> and <span class="math inline">\(RC_2(u)\)</span>) are mathematically constructed for Gamma and Pareto loss distributions.</li>
 </ul>
+</section>
+<section id="create-flashcards" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="create-flashcards">2. Create Flashcards</h3>
+<p>Perfect for helping students memorize core actuarial terminology, mathematical notations, and dataset parameters before they sit for their exams.</p>
+<ul>
+<li><strong>Prompt Idea:</strong> Generate 10 flashcards on key concepts from <strong>Chapters 1 through 4</strong>, featuring terms on one side (such as <strong>‘optimal frontier’</strong>, <strong>‘risk decomposition’</strong>, and <strong>‘retained claims’</strong>) and their definitions on the other.</li>
+<li><strong>Prompt Idea:</strong> Create flashcards summarizing the key characteristics of the three main datasets in the text, detailing what type of risk advisor or insurer each dataset represents.</li>
+<li><strong>Prompt Idea:</strong> Generate a set of flashcards with mathematical formulas on one side (such as the <strong>Additive Risk Transfer Cost</strong> <span class="math inline">\(RTC(u_1, u_2)\)</span>) and their corresponding distributional assumptions and definitions on the back.</li>
+</ul>
+</section>
+<section id="simulate-a-discussion" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="simulate-a-discussion">3. Simulate a Discussion</h3>
+<p>These role-play scenarios challenge students to synthesize their knowledge and practice communicating complex quantitative portfolio strategies to corporate boards or clients.</p>
+<ul>
+<li><strong>Prompt Idea:</strong> Act as a <strong>financial analyst advising a corporate risk manager</strong>. Explain to me why we must incorporate a <strong>copula-based dependence structure</strong> in our portfolio rather than assuming complete independence, using the budget constraints of <strong>Chapter 4</strong>.”</li>
+<li><strong>Prompt Idea:</strong> Debate the pros and cons of <strong>analytical two-risk optimization</strong> (<strong>Chapter 5</strong>) versus the <strong>multivariate simulation-based strategy</strong> (<strong>Chapter 7</strong>) from the perspective of an academic actuary and an on-the-ground risk broker.”</li>
+<li><strong>Prompt Idea:</strong> Role-play as a representative from a multi-line general insurer (like the <strong>Wisconsin Property Fund</strong>). Ask me to justify how using the book’s core <strong>Chapter 7 simulation strategy</strong> will help your organization set optimal retention limits under a strictly binding budget.</li>
+</ul>
+</section>
 </div>
 <p><strong>Remember</strong>: The more specific are your prompts, the better Gemini Notebook can assist you. Use this tool not just for answers, but to think critically and deeply about the material.</p>
 </section>
@@ -650,7 +688,6 @@ document.getElementById("defaultOpen").click();
 <ul>
 <li><em>Prompt Idea</em>: “Interpret equation (1.1).”</li>
 </ul></li>
-<li>Ask it to help understand the <b>R</b> code.</li>
 <li>If you ask a question in English, it is designed to respond in English. In the same way, if you ask in Spanish, it should respond in Spanish.</li>
 </ul>
 </div>
@@ -679,7 +716,7 @@ document.getElementById("defaultOpen").click();
 </section>
 <section id="data" class="level1 unnumbered">
 <h1 class="unnumbered">Data</h1>
-<p>For this workshop, you will find links to the data embedded in our notebooks (that you will retrieve on the fly). So, you will <strong>not</strong> need to download data in advance.</p>
+<p>For this workshop, you will find links to the data embedded in our Jupyter notebooks (that you will retrieve on the fly). So, you will <strong>not</strong> need to download data in advance.</p>
 <h6 style="text-align: left;" class="anchored" data-anchor-id="data">
 <a id="displayText.Data.Hide" href="javascript:toggleText('toggleText.Data.Hide','displayText.Data.Hide');"><i><strong>More Data Resources</strong></i></a>
 </h6>
@@ -702,16 +739,16 @@ document.getElementById("defaultOpen").click();
 </h6>
 <div id="toggleText.ChatBots.Hide" style="display: none">
 <ul>
-<li>In Google Colab, you will see a Gemini chatbot sitting on the right next to the code. I think you will find this very handy for helping you fix and understand the purpose of the code.</li>
+<li>In Google Colab, you will see a Gemini chatbot sitting on the right next to the code. I think you will find this very handy for helping you adjust and understand the purpose of the code.</li>
 <li>If you want, you can also ask Gemini Notebook about the code.
 <ul>
 <li>Gemini Notebook only knows what is in the uploaded sources, it does not browse the internet.</li>
 <li>Because there is ‘R’ code in the uploaded sources, it can give some insights in to ‘R’ questions.</li>
-<li>However, the Gemini chatbot has more resources available and is especially aware of the Colab environment, so I recommend going to there first for ‘R’ question</li>
+<li>However, the Gemini chatbot in Colab has more resources available and is especially aware of the Colab environment, so I recommend going to there first for ‘R’ questions.</li>
 </ul></li>
 <li>So, why bother with Gemini Notebook?
 <ul>
-<li>The big strength is that it only knows what’s in the uploaded sources, it does not browse the internet.</li>
+<li>An important feature is that it only knows what is in the uploaded sources, it does not browse the internet.</li>
 <li>This means it can give responses with direct attribution in the uploaded sources, very handy.</li>
 <li>In addition, because of its limited sources, it is much less likely to be prone to “hallucination” (making things up) when compared to more general chatbots.</li>
 </ul></li>

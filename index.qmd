@@ -195,7 +195,9 @@ schedule <- data.frame(
     "Participants will explore optimizing risk portfolios using commercial insurance data from Wisconsin",
     "<i>Break</i>",
     "<b>Topic 4</b>. Incorporating Spatial Dependence",
-    "Participants will explore Florida flood insurance data",
+    'Participants will explore Florida flood insurance data
+    <br>
+    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/SpatialRiskPool.ipynb">Topic 4 Jupyter Notebook - Optimizing Spatially Dependent Risk Pools</a>' ,
     "<i>Wrap-Up</i>"
   ),  stringsAsFactors = FALSE)
 

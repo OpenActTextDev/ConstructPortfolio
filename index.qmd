@@ -113,7 +113,7 @@ library(kableExtra)
 
 schedule <- data.frame(
   Time = c(
-    "9:00–9:20 am", "9:20–10:00 am", "10:00–10:30 am",  "10:30–11:00 am",
+    "9:00–9:20 am", "9:20–9:50 am", "9:50–10:30 am",  "10:30–11:00 am",
     "11:00–11:45 am", "11:45–12:30 pm",  "12:30–2:00 pm",
     "2:00–2:45 pm", "2:45–3:30 pm", "3:30–3:50 pm",
     "3:50–4:20 pm", "4:20–4:50 pm", "4:50–5:00 pm"
@@ -179,21 +179,24 @@ library(kableExtra)
 
 schedule <- data.frame(
   Time = c(
-    "9:00–9:20 am", "9:20–10:00 am", "10:00–10:30 am",  "10:30–11:00 am",
+    "9:00–9:20 am", "9:20–9:50 am", "9:50–10:30 am",  "10:30–11:00 am",
     "11:00–11:45 am", "11:45–12:30 pm",  "12:30–2:00 pm",
     "2:00–2:45 pm", "2:45–3:30 pm", "3:30–3:50 pm",
     "3:50–4:20 pm", "4:20–4:50 pm", "4:50–5:00 pm"
   ),
   Activity = c(
     "<b>Welcome</b>, Introduction to the workshop,<br>&nbsp;&nbsp;&nbsp;How it will work, What you can get out of it.",
-    '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Topic 1 Pdf Slides - Introduction to Constructing Insurable Risk Portfolios</a> <br>
-    <a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Topic 1 Pdf Slides - Optimizing Investment Portfolios</a>' ,
+    '<b>Topic 1. </b> Introduction to Constructing Insurable Risk Portfolios <br>
+    <a href="https://github.com/OpenActTextDev/ConstructPorfolio/blob/main/Presentations/ColombiaSC_Intro2026.pdf">Topic 1 Pdf Slides</a>'  ,
     'Participants learn how to construct an optimal investment portfolio <br>
     <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/InvestmentPortfolios.ipynb">Topic 1 Jupyter Notebook - Optimizing Investment Portfolios</a> <br>
-    <a href="https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1">Topic 1 Gemini Notebook - Optimizing Investment Portfolios</a>',
+    <a href="https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1">Topic 1 Gemini Notebook</a>',
     "<i>Coffee Break</i>",
-    "<b>Topic 2</b>. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks",
-    "Participants will work with code to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.",
+    '<b>Topic 2</b>. Risk Retention Functions and Risk Measures for Single Risks and Several Independent Risks
+    <br>
+    <a href="https://github.com/OpenActTextDev/ConstructPorfolio/blob/main/Presentations/ColombiaSC_BasicTools2026.pdf">Topic 2 Pdf Slides</a>',
+    'Participants will work with code to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.<br>
+    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/BasicTools.ipynb">Topic 2 Jupyter Notebook -Basic Tools</a>',
     "<i>Lunch</i>",
     "<b>Topic 3</b>. Optimizing Risk Retention with ANU Data",
     "Participants will explore optimizing risk portfolios using commercial insurance data from Wisconsin",

@@ -127,7 +127,7 @@ schedule <- data.frame(
     "Participants will work with code to generate dependent variables as well as to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.",
     "<i>Lunch</i>",
     "<b>Topic 3</b>. Two Case Studies: Optimizing Risk Retention with Australian and Wisconsin Data",
-    "Participants will explore optimizing risk portfolios using commercial insurance data from Wisconsin",
+    "Participants will explore optimizing risk portfolios using Australian large company data and Wisconsin commercial insurance data",
     "<i>Break</i>",
     "<b>Topic 4</b>. Incorporating Spatial Dependence",
     "Participants will explore Florida flood insurance data",
@@ -198,8 +198,9 @@ schedule <- data.frame(
     'Participants will work with code to generate dependent variables as well as to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.<br>
     <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/BasicTools.ipynb">Topic 2 Jupyter Notebook -Basic Tools</a>',
     "<i>Lunch</i>",
-    "<b>Topic 3</b>. Optimizing Risk Retention with ANU Data",
-    "Participants will explore optimizing risk portfolios using commercial insurance data from Wisconsin",
+    "<b>Topic 3</b>. Two Case Studies: Optimizing Risk Retention with Australian and Wisconsin Data",
+    'Participants will explore optimizing risk portfolios using Australian large company data and Wisconsin commercial insurance data<br>
+    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/ANUCaseStudy.ipynb">Topic 3 Jupyter Notebook - ANU Case Study</a> <br><a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/WisconsinCaseStudy.ipynb">Topic 3 Jupyter Notebook - Wisconsin Case Study</a>',
     "<i>Break</i>",
     "<b>Topic 4</b>. Incorporating Spatial Dependence",
     'Participants will explore Florida flood insurance data

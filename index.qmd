@@ -160,11 +160,7 @@ kbl(schedule,  escape = FALSE,
 
 <br>
 
-**Details for the Short Course Workshop Schedule are UNDER CONSTRUCTION**
-
-<br>
-
-`r HideText('Section4122.Hide', 'Detailed Workshop Schedule')`   
+`r HideText('Section4122.Hide', 'Detailed Workshop Schedule - UNDER CONSTRUCTION')`   
 
 *  Each block consists of a lecture, with substantial time for interactive work and a healthy break.
 *  Click on the table links to get access to 
@@ -189,8 +185,7 @@ schedule <- data.frame(
     '<b>Topic 1. </b> Introduction to Constructing Insurable Risk Portfolios <br>
     <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Presentations/ColombiaSC_Intro2026.pdf">Topic 1 Pdf Slides</a>'  ,
     'Participants learn how to construct an optimal investment portfolio <br>
-    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/InvestmentPortfolios.ipynb">Topic 1 Jupyter Notebook - Optimizing Investment Portfolios</a> <br>
-    <a href="https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1">Topic 1 Gemini Notebook</a>',
+    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/InvestmentPortfolios.ipynb">Topic 1 Jupyter Notebook - Optimizing Investment Portfolios</a> <br>',
     "<i>Coffee Break</i>",
     '<b>Topic 2</b>. Basic Tools: Dependence, Risk Retention Functions and Risk Measures. Optimal Portfolio Construction.
     <br>
@@ -198,9 +193,10 @@ schedule <- data.frame(
     'Participants will work with code to generate dependent variables as well as to quantify risk measures and risk retention functions. You also learn to optimize basic portfolios.<br>
     <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/BasicTools.ipynb">Topic 2 Jupyter Notebook -Basic Tools</a>',
     "<i>Lunch</i>",
-    "<b>Topic 3</b>. Two Case Studies: Optimizing Risk Retention with Australian and Wisconsin Data",
+    '<b>Topic 3</b>. Two Case Studies: Optimizing Risk Retention with Australian and Wisconsin Data<br>
+    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Presentations/TwoCaseStudies.pdf">Topic 3 Pdf Slides</a>',
     'Participants will explore optimizing risk portfolios using Australian large company data and Wisconsin commercial insurance data<br>
-    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/ANUCaseStudy.ipynb">Topic 3 Jupyter Notebook - ANU Case Study</a> <br><a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/WisconsinCaseStudy.ipynb">Topic 3 Jupyter Notebook - Wisconsin Case Study</a>',
+    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/ANUCaseStudy.ipynb">Topic 3 Jupyter Notebook - ANU Case Study</a> <br><a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/WiscCaseStudy.ipynb">Topic 3 Jupyter Notebook - Wisconsin Case Study</a>',
     "<i>Break</i>",
     "<b>Topic 4</b>. Incorporating Spatial Dependence",
     'Participants will explore Florida flood insurance data
@@ -233,57 +229,9 @@ kbl(schedule,  escape = FALSE,
 
 ```
 
-
-```{r Table12, echo = FALSE, eval = FALSE}
-
-Presentations <- c('<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1A_30June.pdf">Welcome and Foundations <br> Topic 1</a>', 
-             '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession1B_30June.pdf"> Topic 2</a>',
-             '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession2A_10July.pdf"> Topic 3</a>', '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession2B_10July.pdf"> Topic 4</a>')
-
-
-
-Notebooks <- c('<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession3A_10July.pdf">Tree-based Ensemble methods and Interpretability</a>', 
-             '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession3B_18July.pdf">Big Data, Dimension Reduction and Non-Supervised Learning</a>',
-            '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession4A_09July.pdf">Neural Networks</a>', 
-            '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession4B_18July.pdf">Graphic Data Neural Networks</a>', '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/Fei%20Huang_Ethical%20AI%20for%20Actuaries%20_CAA.pdf">Fei Huang Thoughts on Ethics</a>')
-Topics3 <- c('<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession5A_18July.pdf">Recurrent Neural Networks, Word Embedding</a>', 
-             '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Presentations/ColombiaSession5B_10July.pdf">Artificial Intelligence, Natural Language Processing, and ChatGPT</a>',
-             "Dani Bauer Insights", "Applications and Wrap-Up")
-Topics <- c(Topics1, Topics2, Topics3)
-
-
-DataSets <- c('<a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/AutoLiabilityClaims.ipynb">Auto Liability Claims</a>', 
-  '<a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/MEPS.ipynb">Medical Expenditures (MEPS)</a>',
-  '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/HousePriceRegularisation.ipynb">Seattle House Prices</a>',
-  '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/VicRoadCrashLrTree.ipynb">Victoria road crash data</a>', '<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/VicRoadCrashRFBoosting.ipynb">Victoria road crash data</a>',
-  '<a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/BigDataDimReduction.ipynb">Big Data, Dimension Reduction, and Non-Supervised Learning</a>',
-'<a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/HousePriceRegression.ipynb">Seattle House Prices</a><br><a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/ClaimCounts.ipynb">Claim Counts</a>', 
-'<a href="https://nbviewer.org/github/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/MNIST.ipynb">MNIST Digits Data</a>', "",
-'<a href="https://github.com/OpenActTextDev/ActuarialRegression/blob/main/Notebooks/InsurerStockReturns.ipynb">Insurer Stock Returns</a>',
-  rep("", 3))
-Footer_row <- c("", "",
-  "*Click on a Topic to take you to a pdf of the slides.","*Click on a Notebook to take you to an html of the notebook (provided by NB viewer).")
-TableA <- cbind(Dayplace, Presenter, Topics, DataSets)
-Table1 <- rbind(TableA, Footer_row)
-row.names(Table1)  <- NULL
-colnames(Table1) <- c("Day and Time", "Presenter", "Topics*", "Notebooks* for Participant Activity")
-
-library(kableExtra)
-kableExtra::kbl(Table1, caption = '<b>Detailed Schedule</b>', 
-                     booktabs = T, escape = FALSE, align = 'ccl') %>%
-  kableExtra::kable_classic(full_width = FALSE) %>% 
-  column_spec(1,  width = "3.5cm") %>%
-  column_spec(3,  width = "6.5cm") %>%
-  column_spec(4,  width = "6.5cm") %>%  
-  row_spec(0,  bold = TRUE, italic = FALSE) %>%      
-  row_spec(14, font_size = 12) %>%      
-  kableExtra::kable_styling(bootstrap_options = c("striped", "condensed"))
-
-```
+</div>
 
 <br>
-
-</div>
 
 ***
 
@@ -308,10 +256,13 @@ You can contact Jed at <jfrees@bus.wisc.edu>. See the [Frees Homepage](https://s
 
 ***
 
-# Google Gemini Notebooks {-}
+# Google Gemini Notebook {-}
 
 
-In the Detailed Workshop Schedule above, you will find links to read-only Gemini Notebooks that are being shared. **This tool is like a smart study assistant that only knows the content  uploaded — so it is focused, grounded, and safe to use!**
+Here is a link to a read-only Gemini Notebook that is being shared. **This tool is like a smart study assistant that only knows the content  uploaded — so it is focused, grounded, and safe to use!**
+
+
+[**Try the Google Gemini Notebook**](https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1)
 
 
 ####  **Step-by-Step Guide (Click to Reveal Each Step)** {-}
@@ -482,16 +433,9 @@ Try adding a note like:
 
 </div>
 
-<br><br>
 
-
-[**Try the Chapter 1 Google Notebook**](https://notebook.google.com/notebook/3970659b-a920-4201-8ecc-c83512405bb4?pli=1)
-
-
-<!-- [OLD - My Test Actuarial Google Gem](https://gemini.google.com/share/d/1im6E6sijDR3h4OweakuGNd8Ww30n_ekx?usp=sharing) -->
 
 ***
-
 
 # Google Colaboratory and Jupyter Notebooks {-}
 
@@ -506,14 +450,11 @@ To deliver this course, we will utilize some resources that may be unfamiliar to
    *  To interact with the notebook, go to Colab!
 
 
-
 # Data {-}
 
-For this workshop, you will find links to the data embedded in our Jupyter notebooks (that you will retrieve on the fly). So, you will **not** need to download data in advance.
+For this workshop, you will find links to the data embedded in our Jupyter notebooks (that you will retrieve on the fly). So, you will **not** need to download data in advance. However, should you be interested in experimenting further, here are some helpful sources of data:
 
 `r HideText('Data.Hide', 'More Data Resources')`   
-
-However, should you be interested in experimenting further, here are some helpful sources of data:
 
 -   [Short Course 2025 Repo](https://github.com/OpenActTextDev/ActuarialRegression/) - this is the Github repository where we will store data for the short course.
     -   This repo contains data from the [Modelado de Regresión con Aplicaciones Actuariales y Financieras](https://openacttextdev.github.io/RegressionSpanish/index.html). You may also download these datasets from the [Frees Regression Book Data Site](https://instruction.bus.wisc.edu/jfrees/jfreesbooks/Regression%20Modeling/BookWebDec2010/data.html). Here, you will also find additional documentation regarding variable definitions.

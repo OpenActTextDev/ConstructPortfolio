@@ -160,7 +160,7 @@ kbl(schedule,  escape = FALSE,
 
 <br>
 
-`r HideText('Section4122.Hide', 'Detailed Workshop Schedule - UNDER CONSTRUCTION')`   
+`r HideText('Section4122.Hide', 'Detailed Workshop Schedule')`   
 
 *  Each block consists of a lecture, with substantial time for interactive work and a healthy break.
 *  Click on the table links to get access to 
@@ -198,7 +198,9 @@ schedule <- data.frame(
     'Participants will explore optimizing risk portfolios using Australian large company data and Wisconsin commercial insurance data<br>
     <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/ANUCaseStudy.ipynb">Topic 3 Jupyter Notebook - ANU Case Study</a> <br><a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/WiscCaseStudy.ipynb">Topic 3 Jupyter Notebook - Wisconsin Case Study</a>',
     "<i>Break</i>",
-    "<b>Topic 4</b>. Incorporating Spatial Dependence",
+    '<b>Topic 4</b>. Incorporating Spatial Dependence
+     <br>
+    <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Presentations/ColombiaSC_Spatial2026.pdf">Topic 4 Pdf Slides</a>',
     'Participants will explore Florida flood insurance data
     <br>
     <a href="https://github.com/OpenActTextDev/ConstructPortfolio/blob/main/Notebooks/SpatialRiskPool.ipynb">Topic 4 Jupyter Notebook - Optimizing Spatially Dependent Risk Pools</a>' ,
